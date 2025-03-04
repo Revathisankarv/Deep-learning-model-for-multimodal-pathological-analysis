@@ -5,9 +5,6 @@ This project develops a novel non-invasive health monitoring approach that integ
 ## Table of Contents
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 - Non-invasive monitoring methodology suitable for continuous patient assessment and Early detection of vocal and respiratory disorders
