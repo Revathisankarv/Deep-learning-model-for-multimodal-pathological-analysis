@@ -18,4 +18,3 @@ This project develops a novel non-invasive health monitoring approach that integ
 # Install required dependencies
 pip install -r requirements.txt
 
-## usage
