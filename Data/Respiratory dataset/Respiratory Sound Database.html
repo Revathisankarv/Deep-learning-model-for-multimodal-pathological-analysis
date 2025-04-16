@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database -->
+<html lang="en" data-qb-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Respiratory Sound Database</title>
+  
+    <meta name="robots" content="index, follow">
+  <meta name="description" content="Use audio recordings to detect respiratory diseases.">
+    <meta name="keywords" content="earth and nature,health,biology,health conditions,healthcare,multiclass classification">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC">
+  <script src="./Respiratory Sound Database_files/cb=gapi.loaded_0" nonce="" async=""></script><script nonce="" type="text/javascript">
+    window["pageRequestStartTime"] = 1744778115964;
+    window["pageRequestEndTime"] = 1744778116044;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <script nonce="" id="gsi-client" src="./Respiratory Sound Database_files/client" async="" defer=""></script>
+  <script nonce="">window.KAGGLE_JUPYTERLAB_PATH = "/static/assets/jupyterlab-v4/jupyterlab-index-08f674ec89a2021bae69.html";</script>
+  <link rel="preconnect" href="https://www.google-analytics.com/" crossorigin="anonymous"><link rel="preconnect" href="https://stats.g.doubleclick.net/"><link rel="preconnect" href="https://storage.googleapis.com/"><link rel="preconnect" href="https://apis.google.com/">
+    <link href="https://www.kaggle.com/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" id="dynamic-favicon">
+  <link rel="manifest" href="https://www.kaggle.com/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+  <link href="./Respiratory Sound Database_files/css" rel="preload" as="style">
+  <link href="./Respiratory Sound Database_files/css2" rel="preload" as="style">
+  <link href="./Respiratory Sound Database_files/css" rel="stylesheet" media="all" id="async-google-font-1">
+  <link href="./Respiratory Sound Database_files/css2" rel="stylesheet" media="all" id="async-google-font-2">
+  <script nonce="" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+
+    <link rel="canonical" href="https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database">
+    <link rel="stylesheet" type="text/css" href="./Respiratory Sound Database_files/app.css">
+
+  
+    
+ 
+      <script nonce="">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script><style></style>
+    <script nonce="">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="" async="" src="./Respiratory Sound Database_files/js"></script>
+
+  
+    
+    <meta property="og:url" content="https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database">
+    <meta property="og:title" content="Respiratory Sound Database">
+    <meta property="og:description" content="Use audio recordings to detect respiratory diseases.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/110374/263751/34fddede485e0139be1c52f0d3ca4a27/dataset-card.jpg?t=2019-01-28-05-50-38">
+    <meta property="fb:app_id" content="2665027677054710">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@kaggledatasets">
+
+
+  <meta name="twitter:site" content="@Kaggle"> 
+  
+    
+            <script nonce="" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"Respiratory Sound Database","description":"### Context\n\nRespiratory sounds are important indicators of respiratory health and respiratory disorders. The sound emitted when a person breathes is directly related to air movement, changes within lung tissue and the position of secretions within the lung. A wheezing sound, for example, is a common sign that a patient has an obstructive airway disease like asthma or chronic obstructive pulmonary disease (COPD).\n\nThese sounds can be recorded using digital stethoscopes and other recording techniques. This digital data opens up the possibility of using machine learning to automatically diagnose respiratory disorders like asthma, pneumonia and bronchiolitis, to name a few. \n\n### Content\n\nThe Respiratory Sound Database was created by two research teams in Portugal and Greece. It includes 920 annotated recordings of varying length - 10s to 90s. These recordings were taken from 126 patients. There are a total of 5.5 hours of recordings containing 6898 respiratory cycles - 1864 contain crackles, 886 contain wheezes and 506 contain both crackles and wheezes. The data includes both clean respiratory sounds as well as noisy recordings that simulate real life conditions. The patients span all age groups - children, adults and the elderly.\n\nThis Kaggle dataset includes:\n\n- 920 .wav sound files\n- 920 annotation .txt files\n- A text file listing the diagnosis for each patient\n- A text file explaining the file naming format\n- A text file listing 91 names (filename_differences.txt )\n- A text file containing demographic information for each patient\n\nNote:<br>\n filename_differences.txt is a list of files whose names were corrected after this dataset's creators found a bug in the original file naming script. It can now be ignored.\n\n### General\n\n     The demographic info file has 6 columns:\n      - Patient number\n      - Age\n      - Sex\n      - Adult BMI (kg/m2)\n      - Child Weight (kg)\n      - Child Height (cm)\n\n\n    Each audio file name is divided into 5 elements, separated with underscores (_).\n\n    1. Patient number (101,102,...,226)\n    2. Recording index\n    3. Chest location \n          a. Trachea (Tc)\n          b. Anterior left (Al)\n          c. Anterior right (Ar)\n          d. Posterior left (Pl)\n          e. Posterior right (Pr)\n          f. Lateral left (Ll)\n          g. Lateral right (Lr)\n    4. Acquisition mode \n         a. sequential/single channel (sc), \n         b. simultaneous/multichannel (mc)\n    5. Recording equipment \n         a. AKG C417L Microphone (AKGC417L), \n         b. 3M Littmann Classic II SE Stethoscope (LittC2SE), \n         c. 3M Litmmann 3200 Electronic Stethoscope (Litt3200), \n         d.  WelchAllyn Meditron Master Elite Electronic Stethoscope (Meditron)\n    \n    The annotation text files have four columns:\n    - Beginning of respiratory cycle(s)\n    - End of respiratory cycle(s)\n    - Presence/absence of crackles (presence=1, absence=0)\n    - Presence/absence of wheezes (presence=1, absence=0)\n\n    The abbreviations used in the diagnosis file are:\n    - COPD: Chronic Obstructive Pulmonary Disease\n    - LRTI: Lower Respiratory Tract Infection\n    - URTI: Upper Respiratory Tract Infection\n\n### Citation\n\nPaper: Α Respiratory Sound Database for the Development of Automated Classification<br>\nRocha BM, Filos D, Mendes L, Vogiatzis I, Perantoni E, Kaimakamis E, Natsiavas P, Oliveira A, Jácome C, Marques A, Paiva RP (2018) In Precision Medicine Powered by pHealth and Connected Health (pp. 51-55). Springer, Singapore.<br>\nhttps://eden.dei.uc.pt/~ruipedro/publications/Conferences/ICBHI2017a.pdf\n\n#### Ref Websites\n\n-  http://www.auditory.org/mhonarc/2018/msg00007.html\n- http://bhichallenge.med.auth.gr/ \n\n### Acknowledgements\n\nMany thanks to the research teams at the University of Coimbra, Portugal; the University de Aveiro, Portugal and the Aristotle University of Thessaloniki, Greece for making this dataset publicly available.\n\n\n### Inspiration\n\n- Build a model to classify respiratory diseases.\n- Build a model to detect if a recording contains crackles, wheezes or both.\n- Annotation is a time consuming process. Create a model to automatically annotate respiratory sound recordings.\n- Deploy your model as a Tensorflow.js web app so it can be accessed from anywhere in the world.\n- Bioelectronics - Can you build your own digital stethoscope using an Arduino? If you are an aspiring inventor, this video will give you some valuable practical advice: https://www.youtube.com/watch?v=jo1cQ-ga2MI\n\n\nPhoto by voltamax on Pixabay.","url":"https://www.kaggle.com/vbookshelf/respiratory-sound-database","version":2,"keywords":["subject, earth and nature","subject, health and fitness, health","subject, earth and nature, biology","subject, health and fitness, health, health conditions","subject, health and fitness, health, healthcare","task, multiclass classification"],"license":{"@type":"CreativeWork","name":"Unknown","url":""},"identifier":["110374"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"vbookshelf","url":"https://www.kaggle.com/vbookshelf","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1086574-kg.jpg"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database/download?datasetVersionNumber=2","contentSize":"3958459400 bytes"}],"commentCount":11,"dateModified":"2019-01-29T06:42:26.553Z","discussionUrl":"https://www.kaggle.com/vbookshelf/respiratory-sound-database/discussion","alternateName":"Use audio recordings to detect respiratory diseases.","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/110374/263751/34fddede485e0139be1c52f0d3ca4a27/dataset-card.jpg?t=2019-01-28-05-50-38","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":11},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":25369},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":511530},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":526}]}</script>
+        
+
+  
+    
+
+  
+    
+
+
+    <script nonce="">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="" src="./Respiratory Sound Database_files/api.js.download" defer="" async="" gapi_processed="true"></script>
+  <script nonce="" src="./Respiratory Sound Database_files/runtime.js.download"></script>
+  <script nonce="" src="./Respiratory Sound Database_files/vendor.js.download"></script>
+  <script nonce="" src="./Respiratory Sound Database_files/app.js.download"></script><style id="googleidentityservice_button_styles" nonce="">.qJTHM{-webkit-user-select:none;color:#202124;direction:ltr;-webkit-touch-callout:none;font-family:"Roboto-Regular",arial,sans-serif;-webkit-font-smoothing:antialiased;font-weight:400;margin:0;overflow:hidden;-webkit-text-size-adjust:100%}.ynRLnc{left:-9999px;position:absolute;top:-9999px}.L6cTce{display:none}.bltWBb{word-break:break-all}.hSRGPd{color:#1a73e8;cursor:pointer;font-weight:500;text-decoration:none}.Bz112c-W3lGp{height:16px;width:16px}.Bz112c-E3DyYd{height:20px;width:20px}.Bz112c-r9oPif{height:24px;width:24px}.Bz112c-uaxL4e{-webkit-border-radius:10px;border-radius:10px}.LgbsSe-Bz112c{display:block}.S9gUrf-YoZ4jf,.S9gUrf-YoZ4jf *{border:none;margin:0;padding:0}.fFW7wc-ibnC6b>.aZ2wEe>div{border-color:#4285f4}.P1ekSe-ZMv3u>div:nth-child(1){background-color:#1a73e8!important}.P1ekSe-ZMv3u>div:nth-child(2),.P1ekSe-ZMv3u>div:nth-child(3){background-image:linear-gradient(to right,rgba(255,255,255,.7),rgba(255,255,255,.7)),linear-gradient(to right,#1a73e8,#1a73e8)!important}.haAclf{display:inline-block}.nsm7Bb-HzV7m-LgbsSe{-webkit-border-radius:4px;border-radius:4px;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-transition:background-color .218s,border-color .218s;transition:background-color .218s,border-color .218s;-webkit-user-select:none;-webkit-appearance:none;background-color:#fff;background-image:none;border:1px solid #dadce0;color:#3c4043;cursor:pointer;font-family:"Google Sans",arial,sans-serif;font-size:14px;height:40px;letter-spacing:0.25px;outline:none;overflow:hidden;padding:0 12px;position:relative;text-align:center;vertical-align:middle;white-space:nowrap;width:auto}@media screen and (-ms-high-contrast:active){.nsm7Bb-HzV7m-LgbsSe{border:2px solid windowText;color:windowText}}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe{font-size:14px;height:32px;letter-spacing:0.25px;padding:0 10px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe{font-size:11px;height:20px;letter-spacing:0.3px;padding:0 8px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe{padding:0;width:40px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe{width:32px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe{width:20px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK{-webkit-border-radius:20px;border-radius:20px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.pSzOP-SxQuSe{-webkit-border-radius:16px;border-radius:16px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.purZT-SxQuSe{-webkit-border-radius:10px;border-radius:10px}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc{border:none;color:#fff}.nsm7Bb-HzV7m-LgbsSe.MFS4be-v3pZbf-Ia7Qfc{background-color:#1a73e8}.nsm7Bb-HzV7m-LgbsSe.MFS4be-JaPV2b-Ia7Qfc{background-color:#202124;color:#e8eaed}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:18px;margin-right:8px;min-width:18px;width:18px}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:14px;min-width:14px;width:14px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:10px;min-width:10px;width:10px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin-left:8px;margin-right:-4px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin:0;padding:10px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{padding:8px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{padding:4px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-top-left-radius:3px;border-top-left-radius:3px;-webkit-border-bottom-left-radius:3px;border-bottom-left-radius:3px;display:-webkit-box;display:-webkit-flex;display:flex;justify-content:center;-webkit-align-items:center;align-items:center;background-color:#fff;height:36px;margin-left:-10px;margin-right:12px;min-width:36px;width:36px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c,.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin:0;padding:0}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{height:28px;margin-left:-8px;margin-right:10px;min-width:28px;width:28px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{height:16px;margin-left:-6px;margin-right:8px;min-width:16px;width:16px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:3px;border-radius:3px;margin-left:2px;margin-right:0;padding:0}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:18px;border-radius:18px}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:14px;border-radius:14px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:8px;border-radius:8px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-bN97Pc-sM5MNb{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-flex-direction:row;flex-direction:row;justify-content:space-between;-webkit-flex-wrap:nowrap;flex-wrap:nowrap;height:100%;position:relative;width:100%}.nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX{justify-content:center}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-BPrWId{-webkit-flex-grow:1;flex-grow:1;font-family:"Google Sans",arial,sans-serif;font-weight:500;overflow:hidden;text-overflow:ellipsis;vertical-align:top}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-BPrWId{font-weight:300}.nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX .nsm7Bb-HzV7m-LgbsSe-BPrWId{-webkit-flex-grow:0;flex-grow:0}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-MJoBVe{-webkit-transition:background-color .218s;transition:background-color .218s;bottom:0;left:0;position:absolute;right:0;top:0}.nsm7Bb-HzV7m-LgbsSe:hover,.nsm7Bb-HzV7m-LgbsSe:focus{-webkit-box-shadow:none;box-shadow:none;border-color:rgb(210,227,252);outline:none}.nsm7Bb-HzV7m-LgbsSe:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe,.nsm7Bb-HzV7m-LgbsSe:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(66,133,244,.04)}.nsm7Bb-HzV7m-LgbsSe:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(66,133,244,.1)}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe,.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.24)}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.32)}.nsm7Bb-HzV7m-LgbsSe .n1UuX-DkfjY{-webkit-border-radius:50%;border-radius:50%;display:-webkit-box;display:-webkit-flex;display:flex;height:20px;margin-left:-4px;margin-right:8px;min-width:20px;width:20px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId{font-family:"Roboto";font-size:12px;text-align:left}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .ssJRIf,.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .fmcmS{overflow:hidden;text-overflow:ellipsis}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;color:#5f6368;fill:#5f6368;font-size:11px;font-weight:400}.nsm7Bb-HzV7m-LgbsSe.jVeSEe.MFS4be-Ia7Qfc .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{color:#e8eaed;fill:#e8eaed}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .Bz112c{height:18px;margin:-3px -3px -3px 2px;min-width:18px;width:18px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-top-left-radius:0;border-top-left-radius:0;-webkit-border-bottom-left-radius:0;border-bottom-left-radius:0;-webkit-border-top-right-radius:3px;border-top-right-radius:3px;-webkit-border-bottom-right-radius:3px;border-bottom-right-radius:3px;margin-left:12px;margin-right:-10px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:18px;border-radius:18px}.L5Fo6c-sM5MNb{border:0;display:block;left:0;position:relative;top:0}.L5Fo6c-bF1uUb{-webkit-border-radius:4px;border-radius:4px;bottom:0;cursor:pointer;left:0;position:absolute;right:0;top:0}.L5Fo6c-bF1uUb:focus{border:none;outline:none}sentinel{}</style><style id="_goober"> .go1475592160{height:0;}.go1671063245{height:auto;}.go1888806478{display:flex;flex-wrap:wrap;flex-grow:1;}@media (min-width:600px){.go1888806478{flex-grow:initial;min-width:288px;}}.go167266335{background-color:#313131;font-size:0.875rem;line-height:1.43;letter-spacing:0.01071em;color:#fff;align-items:center;padding:6px 16px;border-radius:4px;box-shadow:0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);}.go3162094071{padding-left:20px;}.go3844575157{background-color:#313131;}.go1725278324{background-color:#43a047;}.go3651055292{background-color:#d32f2f;}.go4215275574{background-color:#ff9800;}.go1930647212{background-color:#2196f3;}.go946087465{display:flex;align-items:center;padding:8px 0;}.go703367398{display:flex;align-items:center;margin-left:auto;padding-left:16px;margin-right:-8px;}.go3963613292{width:100%;position:relative;transform:translateX(0);top:0;right:0;bottom:0;left:0;min-width:288px;}.go1141946668{box-sizing:border-box;display:flex;max-height:100%;position:fixed;z-index:1400;height:auto;width:auto;transition:top 300ms ease 0ms,right 300ms ease 0ms,bottom 300ms ease 0ms,left 300ms ease 0ms,max-width 300ms ease 0ms;pointer-events:none;max-width:calc(100% - 40px);}.go1141946668 .notistack-CollapseWrapper{padding:6px 0px;transition:padding 300ms ease 0ms;}@media (max-width:599.95px){.go1141946668{width:100%;max-width:calc(100% - 32px);}}.go3868796639 .notistack-CollapseWrapper{padding:2px 0px;}.go3118922589{top:14px;flex-direction:column;}.go1453831412{bottom:14px;flex-direction:column-reverse;}.go4027089540{left:20px;}@media (min-width:600px){.go4027089540{align-items:flex-start;}}@media (max-width:599.95px){.go4027089540{left:16px;}}.go2989568495{right:20px;}@media (min-width:600px){.go2989568495{align-items:flex-end;}}@media (max-width:599.95px){.go2989568495{right:16px;}}.go4034260886{left:50%;transform:translateX(-50%);}@media (min-width:600px){.go4034260886{align-items:center;}}</style>
+    <script nonce="" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+<script type="text/javascript" src="./Respiratory Sound Database_files/MathJax.js.download"></script><style data-styled="active" data-styled-version="6.1.13"></style><style type="text/css">.lf-progress {
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  width: 100%;
+  /* margin: 0 10px; */
+  height: 4px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.lf-progress:focus {
+  outline: none;
+  border: none;
+}
+.lf-progress::-moz-range-track {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+.lf-progress::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-moz-range-thumb {
+  -moz-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-ms-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.lf-progress::-ms-fill-lower {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-fill-upper {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-thumb {
+  border: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress:focus::-ms-fill-lower {
+  background: #ccc;
+}
+.lf-progress:focus::-ms-fill-upper {
+  background: #ccc;
+}
+.lf-player-container :focus {
+  outline: 0;
+}
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-player-btn-container {
+  display: flex;
+  align-items: center;
+}
+.lf-player-btn {
+  cursor: pointer;
+  fill: #999;
+  width: 14px;
+}
+
+.lf-player-btn.active {
+  fill: #555;
+}
+
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  background-color: #ffffff;
+  opacity: 1;
+
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  padding: 10px;
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-arrow {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  bottom: -9px;
+  border-style: solid;
+  border-width: 10px 10px 0px 10px;
+}
+
+.lf-left-align,
+.lf-left-align .lfarrow {
+  left: 0;
+  right: unset;
+}
+
+.lf-right-align,
+.lf-right-align .lf-arrow {
+  right: 0;
+  left: unset;
+}
+
+.lf-text-input {
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  padding: 3px;
+  width: 60px;
+  margin: 0;
+}
+
+.lf-color-picker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.lf-color-selectors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lf-color-component {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.lf-color-component strong {
+  width: 40px;
+}
+
+.lf-color-component input[type='range'] {
+  margin: 0 0 0 10px;
+}
+
+.lf-color-component input[type='number'] {
+  width: 50px;
+  margin: 0 0 0 10px;
+}
+
+.lf-color-preview {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+.lf-preview {
+  height: 60px;
+  width: 60px;
+}
+
+.lf-popover-snapshot {
+  width: 150px;
+}
+.lf-popover-snapshot h5 {
+  margin: 5px 0 10px 0;
+  font-size: 0.75rem;
+}
+.lf-popover-snapshot a {
+  display: block;
+  text-decoration: none;
+}
+.lf-popover-snapshot a:before {
+  content: '⥼';
+  margin-right: 5px;
+}
+.lf-popover-snapshot .lf-note {
+  display: block;
+  margin-top: 10px;
+  color: #999;
+}
+.lf-player-controls > div {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.lf-player-controls > div:first-child {
+  margin-left: 0px;
+}
+.lf-player-controls > div:last-child {
+  margin-right: 0px;
+}
+</style><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888; display: contents}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover, .MJXp-munder {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><link rel="stylesheet" type="text/css" href="./Respiratory Sound Database_files/4787.f5129f48620a03126642.css"><style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css" data-s=""></style><script src="./Respiratory Sound Database_files/loader.js.download" data-loaded="1"></script><script type="text/javascript" charset="UTF-8" nonce="" src="./Respiratory Sound Database_files/loader(1).js.download"></script><link id="load-css-0" rel="stylesheet" type="text/css" href="./Respiratory Sound Database_files/tooltip.css"><link id="load-css-1" rel="stylesheet" type="text/css" href="./Respiratory Sound Database_files/util.css"><link id="load-css-2" rel="stylesheet" type="text/css" href="./Respiratory Sound Database_files/controls.css"><script type="text/javascript" charset="UTF-8" src="./Respiratory Sound Database_files/jsapi_compiled_default_module.js.download" nonce=""></script><script type="text/javascript" charset="UTF-8" src="./Respiratory Sound Database_files/jsapi_compiled_graphics_module.js.download" nonce=""></script><script type="text/javascript" charset="UTF-8" src="./Respiratory Sound Database_files/jsapi_compiled_ui_module.js.download" nonce=""></script><script type="text/javascript" charset="UTF-8" src="./Respiratory Sound Database_files/jsapi_compiled_corechart_module.js.download" nonce=""></script><script type="text/javascript" charset="UTF-8" src="./Respiratory Sound Database_files/jsapi_compiled_controls_module.js.download" nonce=""></script></head>
+<body style="background-color: rgb(255, 255, 255);"><div id="MathJax_Message" style="display: none;"></div>
+  <div id="root"><div class="sc-cJAKoS gHKnCL"><div class="sc-leMUev kQimAe"><div class="sc-fLqhfm iFhgXD"><div class="sc-ajmIN cvlmPk"><button aria-label="Navigation menu" title="Navigation menu" class="sc-cwJYja kWGtZT google-symbols notranslate">menu</button></div><a href="https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database#site-content" class="sc-dRlUCX iuAJHw">Skip to<br>content</a><div class="sc-cUnzlc kdQNZf"><a href="https://www.kaggle.com/" aria-label="Return to Kaggle home page"><img src="./Respiratory Sound Database_files/site-logo.svg" alt="Kaggle" class="sc-byRyzU ixAJKE"></a></div></div></div><div class="sc-gWijiA iWLkWO"><button class="sc-rYtBv zhfri"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 30L20 16L16 20L16 30L20 30Z" fill="#20BEFF"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M20 20L30 20L30 16L20 16L20 20Z" fill="#20BEFF"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M16 20L20 16L15.937 16L6 16L6 20L16 20Z" fill="#20BEFF"></path><rect x="20" y="16" width="4" height="10" transform="rotate(-180 20 16)" fill="#20BEFF"></rect></svg><span class="sc-dprtRQ sc-bYRaZK lkjLvm gdEICN">Create</span></button></div><div class="sc-ebYJzh oGIFW"><div class="sc-gGJNVN cQQMUI"><div class="sc-eSLLWC hkNVZs"><div class="sc-joDKxb fZuEHe"><div class="sc-dTSHqv lhPWyg"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root sc-ibMKnd fkhYiK css-feqhe6" aria-invalid="false"><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedStart css-omz4rr"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate css-1jgtvd5" aria-hidden="true" style="margin-right: 8px;">search</span><input aria-invalid="false" autocomplete="off" id=":r4:" placeholder="Search" type="text" class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-r1vfnz" value=""><fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac"><legend class="css-ihdtdm"><span class="notranslate">​</span></legend></fieldset></div></div></div></div><ul class="MuiList-root km-list css-1uzmcsd" role="list"><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="Home List Item"><div class="sc-kLJHhQ ffiFcO sc-bPCIsI btTbco km-listitem--small"><a aria-label="Home" tabindex="0" href="https://www.kaggle.com/" data-click-log-id="home" role="link" class="sc-lgprfV lmNaAW"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jMWFfh notranslate sc-gluGTh dynLKs css-1jgtvd5" aria-hidden="true" title="Home" aria-label="Home">explore</span></div></div><div class="sc-eauhAA sc-fXwCOG hnTMYu kxsDvJ"><p class="sc-fFoeYl klcIsD" style="padding-left: 4px;">Home</p></div></div></a></div></li><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="Competitions List Item"><div class="sc-kLJHhQ ffiFcO sc-bPCIsI btTbco km-listitem--small"><a aria-label="Competitions" tabindex="0" href="https://www.kaggle.com/competitions" data-click-log-id="competitions" role="link" class="sc-lgprfV lmNaAW"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jMWFfh notranslate sc-gluGTh dynLKs css-1jgtvd5" aria-hidden="true" title="Competitions" aria-label="Competitions">emoji_events</span></div></div><div class="sc-eauhAA sc-fXwCOG hnTMYu kxsDvJ"><p class="sc-fFoeYl klcIsD" style="padding-left: 4px;">Competitions</p></div></div></a></div></li><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="Datasets List Item"><div class="sc-kLJHhQ ikhLmf sc-bPCIsI btTbco km-listitem--small"><a aria-current="page" aria-label="Datasets" tabindex="0" href="https://www.kaggle.com/datasets" data-click-log-id="datasets" role="link" class="sc-lgprfV lmNaAW"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate sc-gluGTh dynLKs css-1jgtvd5" aria-hidden="true" title="Datasets" aria-label="Datasets">table_chart</span></div></div><div class="sc-eauhAA sc-fXwCOG hnTMYu kxsDvJ"><p class="sc-fFoeYl tvNbw" style="padding-left: 4px;">Datasets</p><div class="sc-klMTPf dEToqa"></div></div></div></a></div></li><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="Models List Item"><div class="sc-kLJHhQ ffiFcO sc-bPCIsI btTbco km-listitem--small"><a aria-label="Models" tabindex="0" href="https://www.kaggle.com/models" data-click-log-id="models" role="link" class="sc-lgprfV lmNaAW"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jMWFfh notranslate sc-gluGTh dynLKs css-1jgtvd5" aria-hidden="true" title="Models" aria-label="Models">tenancy</span></div></div><div class="sc-eauhAA sc-fXwCOG hnTMYu kxsDvJ"><p class="sc-fFoeYl klcIsD" style="padding-left: 4px;">Models</p></div></div></a></div></li><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="Code List Item"><div class="sc-kLJHhQ ffiFcO sc-bPCIsI btTbco km-listitem--small"><a aria-label="Code" tabindex="0" href="https://www.kaggle.com/code" data-click-log-id="code" role="link" class="sc-lgprfV lmNaAW"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jMWFfh notranslate sc-gluGTh dynLKs css-1jgtvd5" aria-hidden="true" title="Code" aria-label="Code">code</span></div></div><div class="sc-eauhAA sc-fXwCOG hnTMYu kxsDvJ"><p class="sc-fFoeYl klcIsD" style="padding-left: 4px;">Code</p></div></div></a></div></li><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="Discussions List Item"><div class="sc-kLJHhQ ffiFcO sc-bPCIsI btTbco km-listitem--small"><a aria-label="Discussions" tabindex="0" href="https://www.kaggle.com/discussions" data-click-log-id="discussions" role="link" class="sc-lgprfV lmNaAW"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jMWFfh notranslate sc-gluGTh dynLKs css-1jgtvd5" aria-hidden="true" title="Discussions" aria-label="Discussions">comment</span></div></div><div class="sc-eauhAA sc-fXwCOG hnTMYu kxsDvJ"><p class="sc-fFoeYl klcIsD" style="padding-left: 4px;">Discussions</p></div></div></a></div></li><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="Kaggle Learn List Item"><div class="sc-kLJHhQ ffiFcO sc-bPCIsI btTbco km-listitem--small"><a aria-label="Kaggle Learn" tabindex="0" href="https://www.kaggle.com/learn" data-click-log-id="learn" role="link" class="sc-lgprfV lmNaAW"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jMWFfh notranslate sc-gluGTh dynLKs css-1jgtvd5" aria-hidden="true" title="Learn" aria-label="Learn">school</span></div></div><div class="sc-eauhAA sc-fXwCOG hnTMYu kxsDvJ"><p class="sc-fFoeYl klcIsD" style="padding-left: 4px;">Learn</p></div></div></a></div></li></ul><ul class="MuiList-root km-list css-1uzmcsd" role="list"><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="More on Kaggle List Item"><div class="sc-kLJHhQ ffiFcO sc-bPCIsI btTbco km-listitem--small"><a aria-current="false" aria-expanded="false" aria-label="More on Kaggle" tabindex="0" href="https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database#" data-click-log-id="more" role="link" class="sc-lgprfV lmNaAW"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jMWFfh notranslate sc-gluGTh dynLKs css-1jgtvd5" aria-hidden="true" title="More" aria-label="More">expand_more</span></div></div><div class="sc-eauhAA sc-fXwCOG hnTMYu kxsDvJ"><p class="sc-fFoeYl klcIsD" style="padding-left: 4px;">More</p></div></div></a></div></li></ul></div></div><div class="sc-dKpdpM jUxthE"><button class="sc-cFXGIm cDENfr"><div class="sc-hxIGLx hjTUFV"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jMWFfh notranslate sc-iBAVwl htBdHb css-1jgtvd5" aria-hidden="true" aria-label="Open Active Events dialog">auto_awesome_motion</span></div><p class="sc-fFoeYl sc-itlRTb klcIsD iZdAMW">View Active Events</p></button></div></div></div><div class="sc-esOZpL eZbIjX"><div class="sc-fAnexc ebVNmQ"><div class="sc-fLqhfm iFhgXD"><div class="sc-ajmIN cvlmPk"><button aria-label="Navigation menu" title="Navigation menu" class="sc-cwJYja kWGtZT google-symbols notranslate">menu</button></div><a href="https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database#site-content" class="sc-dRlUCX iuAJHw">Skip to<br>content</a><div class="sc-cUnzlc kdQNZf"><a href="https://www.kaggle.com/" aria-label="Return to Kaggle home page"><img src="./Respiratory Sound Database_files/site-logo.svg" alt="Kaggle" class="sc-byRyzU ixAJKE"></a></div></div></div><div class="sc-eeRdLU ilXVsJ"><div class="sc-iAJcmt gzfwLK"><div class="sc-dTSHqv lhPWyg"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root sc-ibMKnd fkhYiK css-feqhe6" aria-invalid="false"><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedStart css-omz4rr"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate css-1jgtvd5" aria-hidden="true" style="margin-right: 8px;">search</span><input aria-invalid="false" autocomplete="off" id=":r5:" placeholder="Search" type="text" class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-r1vfnz" value=""><fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac"><legend class="css-ihdtdm"><span class="notranslate">​</span></legend></fieldset></div></div></div></div><div class="sc-lmsKoi ehIxrs"><div class="sc-fmtPfW loIipn"><div class="sc-kUiVwB ftGOjG"><a tabindex="0" class="sc-cSzYSJ kVxQds" href="https://www.kaggle.com/account/login?phase=startSignInTab&amp;returnUrl=%2Fdatasets%2Fvbookshelf%2Frespiratory-sound-database"><button tabindex="-1" role="button" class="sc-edmcci iDanTn"><span class="sc-hJRrWL iwZBhE">Sign In</span></button></a></div><div class="sc-kUiVwB ftGOjG"><a tabindex="0" class="sc-cSzYSJ kVxQds" href="https://www.kaggle.com/account/login?phase=startRegisterTab&amp;returnUrl=%2Fdatasets%2Fvbookshelf%2Frespiratory-sound-database"><button tabindex="-1" role="button" class="sc-edmcci euFqtC"><span class="sc-hJRrWL iwZBhE">Register</span></button></a></div></div></div></div></div><div id="site-content" class="sc-fJAEDJ ehaVGJ legacy-less-light-theme"><div class="sc-eouHMD hauMIt"></div><div><div class="sc-ihKisT evtIMM"><div id="kaggle-portal-root-right-rail"></div><div data-testid="dataset-detail-render-tid" class="sc-ivxoEo cZoCRA"><div class="sc-ghWlax dPCUIa"><div height="1px" class="sc-gmXRzs hiOKbi"></div><div class="sc-kNOocT bxgkcS"><div class="sc-eqlCsS eplzdV"><a href="https://www.kaggle.com/vbookshelf" aria-label="vbookshelf&#39;s profile" class="sc-ehIYnC jNnqAS"><div data-testid="avatar-image" title="vbookshelf" class="sc-iDAWOb inETPj" style="background-image: url(&quot;https://storage.googleapis.com/kaggle-avatars/thumbnails/1086574-kg.jpg&quot;);"></div><svg width="32" height="32" viewBox="0 0 32 32"><circle r="15" cx="16" cy="16" fill="none" stroke-width="2" style="stroke: rgb(241, 243, 244);"></circle><path d="M 7.183221215612905 28.135254915624213 A 15 15 0 1 0 16 1" fill="none" stroke-width="2" style="stroke: rgb(129, 72, 253);"></path></svg></a><span style="flex: 1 1 0%; margin-left: 16px;"><span><span class="sc-bMTdWJ bRTSBd">vbookshelf </span></span><span class="sc-bMTdWJ bRTSBd"> · Updated <span class="sc-igFWaW hFvujP" title="Tue Jan 29 2019 12:12:26 GMT+0530 (India Standard Time)" aria-label="6 years ago">6 years ago</span></span></span><div class="sc-fEvjgk jtTDUs"><div class="sc-buUSia eEsDLe"><span class=""><button mode="default" data-testid="upvotebutton__upvote" aria-label="Upvote" title="Upvote" class="sc-iJYoKY sc-bQuDMB flldNe frANyq"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate css-1jgtvd5" aria-hidden="true">arrow_drop_up</span></button></span><button mode="default" aria-label="526 votes" aria-live="polite" class="sc-iJYoKY sc-ipTfem flldNe OZHbz">526</button></div><div><button aria-haspopup="true" class="sc-edmcci cKvyOD sc-efIWVM kXTYGD" tabindex="0" role="button" aria-expanded="false"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS ivHFq notranslate css-1jgtvd5" aria-hidden="true">file_download</span><span class="sc-hJRrWL iwZBhE">Download</span></button></div><img role="presentation" alt="" src="./Respiratory Sound Database_files/goldl@2x.png" class="sc-kBLLVx lanUmB"><div><button aria-label="More options for this dataset" aria-haspopup="true" title="More options for this dataset" class="sc-cwJYja kWGtZT google-symbols notranslate" aria-expanded="false">more_vert</button><div></div></div></div></div><div wrap="hide" class="sc-jSSkKI ljaBxO sc-jnCfif lfqASQ"><div class="sc-iqyJx ctNDHg"><h1 class="sc-jwIPbr sc-eDHQDy ojfEn kUmpWI">Respiratory Sound Database</h1><span class="sc-dprtRQ sc-giBObj iNVFzN iRQRkE" style="margin-bottom: 0px; max-width: none;">Use audio recordings to detect respiratory diseases.</span></div><div wrap="hide" class="sc-fufdwm cDwVht" style="align-self: unset;"><img src="./Respiratory Sound Database_files/dataset-cover.jpg" alt="" class="sc-cUUEuL hSaUKz"></div></div></div><div height="1px" class="sc-gmXRzs hiOKbi"></div><div class="sc-jOCPRi kdDeX"><div class="sc-kNOocT bxgkcS"><div class="sc-ffbnKY kVKRVo"><div class="sc-kcrQAl bDvnXB"><div class="sc-iSMHMi hxeXuW"><h2 class="sc-cEzcPc sc-cAHBcz JcWBt dZaPOC">Respiratory Sound Database</h2></div></div><div class="sc-gBEsyE cUUKbB"><div class="MuiTabs-root sc-hIkorz fJxWZV sc-jzlOV fwzpFy css-pc1mzd"><div class="MuiTabs-scrollableX MuiTabs-hideScrollbar css-oqr85h" style="width: 99px; height: 99px; position: absolute; top: -9999px; overflow: scroll;"></div><div class="MuiTabs-scroller MuiTabs-hideScrollbar MuiTabs-scrollableX css-12qnib" style="margin-bottom: 0px;"><div class="MuiTabs-flexContainer css-k008qs" role="tablist"><a class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected sc-ckRPvo jvWYJB css-i5k1e3" tabindex="0" role="tab" aria-selected="true" aria-label="Data Card, 1 of 4" href="https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database/data"><span class="sc-dprtRQ cvNUvq">Data Card</span><span class="MuiTouchRipple-root css-w0pj6f"></span></a><a class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary sc-ckRPvo jvWYJB css-i5k1e3" tabindex="-1" role="tab" aria-selected="false" aria-label="Code (119), 2 of 4" href="https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database/code"><span class="sc-dprtRQ iNVFzN">Code (119)</span><span class="MuiTouchRipple-root css-w0pj6f"></span></a><a class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary sc-ckRPvo jvWYJB css-i5k1e3" tabindex="-1" role="tab" aria-selected="false" aria-label="Discussion (11), 3 of 4" href="https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database/discussion"><span class="sc-dprtRQ iNVFzN">Discussion (11)</span><span class="MuiTouchRipple-root css-w0pj6f"></span></a><a class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary sc-ckRPvo jvWYJB css-i5k1e3" tabindex="-1" role="tab" aria-selected="false" aria-label="Suggestions (0), 4 of 4" href="https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database/suggestions"><span class="sc-dprtRQ iNVFzN">Suggestions (0)</span><span class="MuiTouchRipple-root css-w0pj6f"></span></a></div><span class="MuiTabs-indicator css-zn1p7a" style="left: 0px; width: 75.5625px;"></span></div></div></div></div></div><div class="sc-hGNhLO ccTMQm sc-hRgSog gULoci sc-deeArx ftPGgu"></div></div> <div class="sc-keAHKp cHeNoY"><div class="sc-jZkGBJ OPIzX"><div class="sc-kyLiIr hfrBCr"><div class="sc-zlfrG iIyboH sc-hifXeo jrCsTN"><div class="sc-eVddSf gZdbWX"><div class="sc-cgxxSg gYoPRe"><h2 class="sc-cHqXqK sc-dqMHui bTsuQr bnVtSN">About Dataset</h2></div></div></div><div class="sc-gcTkhS gpczZy"><div class="sc-dvOJQH bfeTNZ"><div style="min-height: 80px;"><div class="sc-ePpfBx hvYpEH sc-jYgujM jNqUt"><h3>Context</h3>
+<p>Respiratory sounds are important indicators of respiratory health and respiratory disorders. The sound emitted when a person breathes is directly related to air movement, changes within lung tissue and the position of secretions within the lung. A wheezing sound, for example, is a common sign that a patient has an obstructive airway disease like asthma or chronic obstructive pulmonary disease (COPD).</p>
+<p>These sounds can be recorded using digital stethoscopes and other recording techniques. This digital data opens up the possibility of using machine learning to automatically diagnose respiratory disorders like asthma, pneumonia and bronchiolitis, to name a few. </p>
+<h3>Content</h3>
+<p>The Respiratory Sound Database was created by two research teams in Portugal and Greece. It includes 920 annotated recordings of varying length - 10s to 90s. These recordings were taken from 126 patients. There are a total of 5.5 hours of recordings containing 6898 respiratory cycles - 1864 contain crackles, 886 contain wheezes and 506 contain both crackles and wheezes. The data includes both clean respiratory sounds as well as noisy recordings that simulate real life conditions. The patients span all age groups - children, adults and the elderly.</p>
+<p>This Kaggle dataset includes:</p>
+<ul>
+<li>920 .wav sound files</li>
+<li>920 annotation .txt files</li>
+<li>A text file listing the diagnosis for each patient</li>
+<li>A text file explaining the file naming format</li>
+<li>A text file listing 91 names (filename_differences.txt )</li>
+<li>A text file containing demographic information for each patient</li>
+</ul>
+<p>Note:<br><br>
+ filename_differences.txt is a list of files whose names were corrected after this dataset's creators found a bug in the original file naming script. It can now be ignored.</p>
+<h3>General</h3>
+<pre class="uc-code-block"><code> The demographic info file has <span class="hljs-number">6</span> columns:
+  - Patient number
+  - Age
+  - Sex
+  - Adult <span class="hljs-title function_">BMI</span> <span class="hljs-params">(kg/m2)</span>
+  - Child <span class="hljs-title function_">Weight</span> <span class="hljs-params">(kg)</span>
+  - Child <span class="hljs-title function_">Height</span> <span class="hljs-params">(cm)</span>
+
+
+Each audio file name is divided into <span class="hljs-number">5</span> elements, separated with <span class="hljs-title function_">underscores</span> <span class="hljs-params">(_)</span>.
+
+<span class="hljs-number">1.</span> Patient <span class="hljs-title function_">number</span> <span class="hljs-params">(<span class="hljs-number">101</span>,<span class="hljs-number">102</span>,...,<span class="hljs-number">226</span>)</span>
+<span class="hljs-number">2.</span> Recording index
+<span class="hljs-number">3.</span> Chest location 
+      a. Trachea (Tc)
+      b. Anterior <span class="hljs-title function_">left</span> <span class="hljs-params">(Al)</span>
+      c. Anterior <span class="hljs-title function_">right</span> <span class="hljs-params">(Ar)</span>
+      d. Posterior <span class="hljs-title function_">left</span> <span class="hljs-params">(Pl)</span>
+      e. Posterior <span class="hljs-title function_">right</span> <span class="hljs-params">(Pr)</span>
+      f. Lateral <span class="hljs-title function_">left</span> <span class="hljs-params">(Ll)</span>
+      g. Lateral <span class="hljs-title function_">right</span> <span class="hljs-params">(Lr)</span>
+<span class="hljs-number">4.</span> Acquisition mode 
+     a. sequential/single <span class="hljs-title function_">channel</span> <span class="hljs-params">(sc)</span>, 
+     b. simultaneous/multichannel (mc)
+<span class="hljs-number">5.</span> Recording equipment 
+     a. AKG C417L <span class="hljs-title function_">Microphone</span> <span class="hljs-params">(AKGC417L)</span>, 
+     b. 3M Littmann Classic II SE <span class="hljs-title function_">Stethoscope</span> <span class="hljs-params">(LittC2SE)</span>, 
+     c. 3M Litmmann <span class="hljs-number">3200</span> Electronic <span class="hljs-title function_">Stethoscope</span> <span class="hljs-params">(Litt3200)</span>, 
+     d.  WelchAllyn Meditron Master Elite Electronic <span class="hljs-title function_">Stethoscope</span> <span class="hljs-params">(Meditron)</span>
+
+The annotation text files have four columns:
+- Beginning of respiratory <span class="hljs-title function_">cycle</span><span class="hljs-params">(s)</span>
+- End of respiratory <span class="hljs-title function_">cycle</span><span class="hljs-params">(s)</span>
+- Presence/absence of <span class="hljs-title function_">crackles</span> <span class="hljs-params">(presence=<span class="hljs-number">1</span>, absence=<span class="hljs-number">0</span>)</span>
+- Presence/absence of <span class="hljs-title function_">wheezes</span> <span class="hljs-params">(presence=<span class="hljs-number">1</span>, absence=<span class="hljs-number">0</span>)</span>
+
+The abbreviations used in the diagnosis file are:
+- COPD: Chronic Obstructive Pulmonary Disease
+- LRTI: Lower Respiratory Tract Infection
+- URTI: Upper Respiratory Tract Infection
+</code><div class="uc-code-block-copy-button-wrapper"><button class="uc-code-block-copy-button google-symbols" aria-label="Copy code">content_copy</button></div></pre>
+<h3>Citation</h3>
+<p>Paper: Α Respiratory Sound Database for the Development of Automated Classification<br><br>
+Rocha BM, Filos D, Mendes L, Vogiatzis I, Perantoni E, Kaimakamis E, Natsiavas P, Oliveira A, Jácome C, Marques A, Paiva RP (2018) In Precision Medicine Powered by pHealth and Connected Health (pp. 51-55). Springer, Singapore.<br><br>
+<a rel="noreferrer nofollow" aria-label="https://eden.dei.uc.pt/~ruipedro/publications/Conferences/ICBHI2017a.pdf (opens in a new tab)" target="_blank" href="https://eden.dei.uc.pt/~ruipedro/publications/Conferences/ICBHI2017a.pdf">https://eden.dei.uc.pt/~ruipedro/publications/Conferences/ICBHI2017a.pdf</a></p>
+<h4>Ref Websites</h4>
+<ul>
+<li><a rel="noreferrer nofollow" aria-label="http://www.auditory.org/mhonarc/2018/msg00007.html (opens in a new tab)" target="_blank" href="http://www.auditory.org/mhonarc/2018/msg00007.html">http://www.auditory.org/mhonarc/2018/msg00007.html</a></li>
+<li><a rel="noreferrer nofollow" aria-label="http://bhichallenge.med.auth.gr/ (opens in a new tab)" target="_blank" href="http://bhichallenge.med.auth.gr/">http://bhichallenge.med.auth.gr/</a> </li>
+</ul>
+<h3>Acknowledgements</h3>
+<p>Many thanks to the research teams at the University of Coimbra, Portugal; the University de Aveiro, Portugal and the Aristotle University of Thessaloniki, Greece for making this dataset publicly available.</p>
+<h3>Inspiration</h3>
+<ul>
+<li>Build a model to classify respiratory diseases.</li>
+<li>Build a model to detect if a recording contains crackles, wheezes or both.</li>
+<li>Annotation is a time consuming process. Create a model to automatically annotate respiratory sound recordings.</li>
+<li>Deploy your model as a Tensorflow.js web app so it can be accessed from anywhere in the world.</li>
+<li>Bioelectronics - Can you build your own digital stethoscope using an Arduino? If you are an aspiring inventor, this video will give you some valuable practical advice: <a rel="noreferrer nofollow" aria-label="https://www.youtube.com/watch?v=jo1cQ-ga2MI (opens in a new tab)" target="_blank" href="https://www.youtube.com/watch?v=jo1cQ-ga2MI">https://www.youtube.com/watch?v=jo1cQ-ga2MI</a></li>
+</ul>
+<p>Photo by voltamax on Pixabay.</p></div></div></div><button aria-label="View more about this dataset" tabindex="0" role="button" aria-expanded="false" class="sc-edmcci hdHxFO" style="margin: 24px 0px 8px;"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">expand_more</span><span class="sc-hJRrWL iwZBhE">View more</span></button></div></div><div class="sc-jzzKwG hmiJta"><div class="sc-deCJlp GPuGD"><h2 class="sc-eOzmre iyFMKB">Usability</h2><div role="tooltip"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS lnQVSy notranslate css-1jgtvd5" aria-hidden="false" title="Hit enter to view usability metrics" aria-label="Hit enter to view usability metrics" role="button" tabindex="0" style="margin-left: 8px;">info</span></div></div><p class="sc-gQaihK iUbclf" style="margin-top: 4px;"><span data-testid="usability-value">6.47</span></p><h2 class="sc-eOzmre iyFMKB" style="margin-top: 24px;">License</h2><p class="sc-gQaihK sc-SmNGS iUbclf dICBQH"><p class="sc-gQaihK sc-btIXVv iUbclf eiJLfQ">Unknown</p></p><h2 class="sc-eOzmre iyFMKB" style="margin-top: 24px;">Expected update frequency</h2><p class="sc-gQaihK sc-SmNGS iUbclf dICBQH">Not specified</p><h2 class="sc-eOzmre iyFMKB" style="margin-top: 24px;">Tags</h2><div class="sc-fGiiCH byHxAj"><div class="sc-inmITS gdaOes"><div class="sc-qfuyk kBZnBu sc-djgRkv esMAAt" id="combo-tags-menu-chipset" role="group" aria-label="Tags"><a href="https://www.kaggle.com/datasets?tags=7000-Earth+and+Nature" target="_blank" role="link" aria-label="Earth and Nature opens in new window" class="sc-bSficL eaAEWi" style="cursor: pointer; margin-right: 0px;"><span class="sc-eUlrpB sc-eUdMsg dpOfYN iHdudu">Earth and Nature</span></a><a href="https://www.kaggle.com/datasets?tags=11111-Health" target="_blank" role="link" aria-label="Health opens in new window" class="sc-bSficL eaAEWi" style="cursor: pointer; margin-right: 0px;"><span class="sc-eUlrpB sc-eUdMsg dpOfYN iHdudu">Health</span></a><a href="https://www.kaggle.com/datasets?tags=7100-Biology" target="_blank" role="link" aria-label="Biology opens in new window" class="sc-bSficL eaAEWi" style="cursor: pointer; margin-right: 0px;"><span class="sc-eUlrpB sc-eUdMsg dpOfYN iHdudu">Biology</span></a><a href="https://www.kaggle.com/datasets?tags=16378-Health+Conditions" target="_blank" role="link" aria-label="Health Conditions opens in new window" class="sc-bSficL eaAEWi" style="cursor: pointer; margin-right: 0px;"><span class="sc-eUlrpB sc-eUdMsg dpOfYN iHdudu">Health Conditions</span></a><a href="https://www.kaggle.com/datasets?tags=4202-Healthcare" target="_blank" role="link" aria-label="Healthcare opens in new window" class="sc-bSficL eaAEWi" style="cursor: pointer; margin-right: 0px;"><span class="sc-eUlrpB sc-eUdMsg dpOfYN iHdudu">Healthcare</span></a><a href="https://www.kaggle.com/datasets?tags=14202-Multiclass+Classification" target="_blank" role="link" aria-label="Multiclass Classification opens in new window" class="sc-bSficL eaAEWi" style="cursor: pointer; margin-right: 0px;"><span class="sc-eUlrpB sc-eUdMsg dpOfYN iHdudu">Multiclass Classification</span></a></div></div></div></div></div><div class="sc-CAirI jsCuVC"><div class="sc-fGzRZM dQbcDg"><div class="sc-eFDKYm gAUruf"><div class="sc-hHPuqt eDJghY"><div class="sc-iJIVDG crxLhk"><div class="sc-glSWuh fyqiAv"><h2 class="sc-ovuCP sc-bpAwgE jgWmzR cdJygd">demographic_info.txt<span class="sc-ovuCP sc-bppHhu jgWmzR jpfQLN">(2.59 kB)</span></h2><span class=""><div class="sc-gmGjWH HoHRz"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS bHohpu notranslate css-1jgtvd5" aria-hidden="false" aria-label="Download" role="button" tabindex="0">get_app</span></div></span><span class=""><div class="sc-gmGjWH HoHRz"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS bHohpu notranslate css-1jgtvd5" aria-hidden="false" aria-label="Maximize view" role="button" tabindex="0">fullscreen</span></div></span><span class=""><div class="sc-gmGjWH HoHRz"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS bHohpu notranslate css-1jgtvd5" aria-hidden="false" aria-label="Hide tree" role="button" tabindex="0">chevron_right</span></div></span></div><div mode="view" class="sc-lYrAu bOYcWS"><div><div class="sc-fzbaOV dMisKN"><div class="sc-eauhAA sc-bDzeIK hnTMYu jATJEE">About this file </div></div></div><div class="sc-gQaihK sc-lizmsd bwaGMg eFbxdm"><div class="sc-ePpfBx hvYpEH sc-imeBMc ekOFgH"><p>Patient demographic information.</p></div></div></div><div class="sc-dfyheH bKDYEL"><div class="sc-dDKjKZ khJZNh"><span class="sc-jhZTHU btgPPn">
+101 3 F NA 19 99
+102 0.75 F NA 9.8 73
+103 70 F 33 NA NA
+104 70 F 28.47 NA NA
+105 7 F NA 32 135
+106 73 F 21 NA NA
+107 75 F 33.7 NA NA
+108 3 M NA NA NA
+109 84 F 33.53 NA NA
+110 75 M 25.21 NA NA
+111 63 M 28.4 NA NA
+112 60 M 22.86 NA NA
+113 58 M 28.41 NA NA
+114 77 M 23.12 NA NA
+115 0.58 M NA 7.14 64
+116 56 M 28.58 NA NA
+117 68 M 24.4 NA NA
+118 81 M 36.76 NA NA
+119 2 F NA 15.2 94
+120 78 M 35.14 NA NA
+121 13 F NA 65 170
+122 66 M 33 NA NA
+123 5 M NA 25 125
+124 65 M 29.07 NA NA
+125 14 M NA 62 170
+126 1 F NA 10.18 80
+127 2 M NA 12.6 98
+128 65 F 24.3 NA NA
+129 6 M NA 23 119
+130 85 F 17.1 NA NA
+131 3 M NA 14 97
+132 71 M 34 NA NA
+133 68 M 27.4 NA NA
+134 61 M 32 NA NA
+135 70 M 21 NA NA
+136 5 M NA 16.2 110
+137 4 M NA 18 104
+138 56 F 21.6 NA NA
+139 61 M 28.68 NA NA
+140 79 F 23 NA NA
+141 66 M 22.4 NA NA
+142 78 M 26.1 NA NA
+143 0.25 F NA 8.24 68
+144 3 M NA 16.7 100
+145 69 M 23.4 NA NA
+146 67 M 28 NA NA
+147 77 M 25.7 NA NA
+148 4 M NA 33 110
+149 0.67 M NA 9.5 70
+150 0.67 F NA 8.12 74
+151 75 M 28.4 NA NA
+152 16 M NA 70 183
+153 3 M NA 16.7 103
+154 65 M 28.1 NA NA
+155 69 M 26 NA NA
+156 80 M 22.9 NA NA
+157 62 M 53.5 NA NA
+158 63 M 16.5 NA NA
+159 0.83 F NA 11 80
+160 74 M 27.4 NA NA
+161 2 F NA 12 85
+162 67 F 24.9 NA NA
+163 62 M 28.3 NA NA
+164 1 M NA 13 NA
+165 2 F NA 12.7 97
+166 71 M 25.06 NA NA
+167 1 F NA 11.5 86.4
+168 19 F 17.35 NA NA
+169 50 F 28.81 NA NA
+170 79 M 22.6 NA NA
+171 9 M NA 32 133
+172 73 M 29.3 NA NA
+173 3 M NA 17.3 NA
+174 68 M 26.4 NA NA
+175 63 M 28.34 NA NA
+176 65 M 30.1 NA NA
+177 56 M 22.1 NA NA
+178 58 M 30.1 NA NA
+179 10 F NA 15 104
+180 93 M 29.03 NA NA
+181 65 M 26.4 NA NA
+182 11 M NA 33 136
+183 14 F NA NA NA
+184 2 F NA 15 100
+185 75 M 27.7 NA NA
+186 71 M 30 NA NA
+187 0.5 F NA 8.26 71
+188 3 M NA 16 100
+189 75 F 26.2 NA NA
+190 3 F NA NA NA
+191 74 F 36 NA NA
+192 69 M 28 NA NA
+193 77 M 26.3 NA NA
+194 2 M NA 12.8 86
+195 67 M 29.41 NA NA
+196 21 F 25.5 NA NA
+197 16 F NA NA NA
+198 71 M 18.6 NA NA
+199 71 M 20 NA NA
+200 72 F 27.8 NA NA
+201 73 F 28.52 NA NA
+202 2 M NA 11.84 87
+203 57 F 24 NA NA
+204 66 M 29.76 NA NA
+205 45 M 20.1 NA NA
+206 3 M NA 13 92
+207 63 F 29.6 NA NA
+208 5 F NA 24.1 117
+209 14 F NA 80 183
+210 1 F NA 12.96 76
+211 70 F 31.1 NA NA
+212 83 M 23 NA NA
+213 58 F 24.7 NA NA
+214 5 M NA 30 118
+215 56 F 25.35 NA NA
+216 1 M NA 10.25 78
+217 12 F NA NA NA
+218 75 M 26.29 NA NA
+219 81 M 26 NA NA
+220 66 M 35.4 NA NA
+221 74 F 29 NA NA
+222 60 M NA NA NA
+223 NA NA NA NA NA
+224 10 F NA 32.3 143
+225 0.83 M NA 7.8 74
+226 4 M NA 16.7 103</span></div></div></div></div><div class="sc-cLblER yHnTw"><div class="sc-grkHWm fiFIao"><div class="sc-ldvjJq dtYGsQ"><div class="sc-sgxPq bvoAZg"><h2 class="sc-eOzmre iyFMKB">Data Explorer</h2><p class="sc-gQaihK sc-fpxaED iUbclf iWcSzI"><button aria-label="View version history" class="sc-jdgsoA iKfkXn">Version 2</button> (2.18 GB)</p></div><ul class="sc-eAFmVk hLWGGN"><li class="sc-eUHDiG hjgNgh"><div class="sc-VLlDs sc-dnOVKr kPXLdb lfFLCa"><div data-testid="tree-item-arrow-right" aria-selected="false" title="Expand Respiratory_Sound_Database" role="button" tabindex="0" class="sc-hUYaom ieOlMl"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">arrow_right</span></div><div aria-hidden="true" class="sc-bbuppP iNHwNe"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">folder</span></div><div class="sc-hjcfMl dDeiVp"><span class=""><div><p class="sc-gQaihK sc-qXpSd bwaGMg gBYyej">Respiratory_Sound_Database</p></div></span></div></div></li><li class="sc-eUHDiG hjgNgh"><div class="sc-VLlDs sc-dnOVKr HGFPA lfFLCa"><div data-testid="tree-item-arrow-right" aria-selected="true" title="Collapse demographic_info.txt" tabindex="-1" class="sc-hUYaom eoTMvO"></div><div aria-hidden="true" class="sc-bbuppP dVTzxt"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">article</span></div><div class="sc-hjcfMl dDeiVp"><span class=""><div><p class="sc-gQaihK sc-qXpSd bwaGMg dRiOrs">demographic_info.txt</p></div></span></div></div></li><div role="button" class="sc-frDkdR dmwkho"><div class="sc-hUYaom ieOlMl"></div><div class="sc-bbuppP iNHwNe"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">more_horiz</span></div><span class=""><div><p class="sc-gQaihK sc-qXpSd bwaGMg gBYyej">1 more</p></div></span></div></ul></div></div><div class="sc-dfooXd bCZOPY"><h2 class="sc-eOzmre sc-hotRoq iyFMKB ccwsXo">Summary</h2><div class="sc-fxOwno dKWYEq"><div role="button" tabindex="0" aria-label="Expand 1844 files" aria-expanded="false" class="sc-kveZcB hNIpyp"><div class="sc-hUYaom ieOlMl"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS cWGtHq notranslate sc-bNScmN ipOriR css-1jgtvd5" aria-hidden="true" title="Collapse 1844 files" aria-label="Collapse 1844 files">arrow_right</span></div><div class="sc-bbuppP iNHwNe"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">folder</span></div><p class="sc-gQaihK sc-ifXiWw iUbclf hpRTXd">1844 files</p></div></div><div class="sc-fxOwno dKWYEq"><div role="button" tabindex="0" aria-label="Expand 2 columns" aria-expanded="false" class="sc-kveZcB hNIpyp"><div class="sc-hUYaom ieOlMl"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS cWGtHq notranslate sc-bNScmN ipOriR css-1jgtvd5" aria-hidden="true" title="Collapse 2 columns" aria-label="Collapse 2 columns">arrow_right</span></div><div class="sc-bbuppP iNHwNe"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">calendar_view_week</span></div><p class="sc-gQaihK sc-ifXiWw iUbclf hpRTXd">2 columns</p></div></div></div></div></div></div></div><div class="sc-jZFnya bZWVhs"><div><div class="sc-zlfrG iIyboH sc-hifXeo sc-cnNRQF jrCsTN dtXnzY"><div class="sc-eVddSf gZdbWX"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate css-1jgtvd5" aria-hidden="true">lightbulb</span><div class="sc-cgxxSg gYoPRe"><h2 class="sc-cHqXqK sc-dqMHui bTsuQr bnVtSN">See what others are saying about this dataset</h2></div></div></div><h3 id="used-dataset-for" class="sc-eOzmre iyFMKB">What have you used this dataset for?</h3><div class="sc-qfuyk kBZnBu sc-iGRbbY guURwo" role="group" aria-labelledby="used-dataset-for"><button role="button" aria-label="Learning 19 false" class="sc-bSficL bKpYiZ"><span class="sc-eUlrpB sc-eUdMsg dpOfYN iHdudu">Learning 19</span></button><button role="button" aria-label="Research 17 false" class="sc-bSficL bKpYiZ"><span class="sc-eUlrpB sc-eUdMsg dpOfYN iHdudu">Research 17</span></button><button role="button" aria-label="Application 8 false" class="sc-bSficL bKpYiZ"><span class="sc-eUlrpB sc-eUdMsg dpOfYN iHdudu">Application 8</span></button><button role="button" aria-label="LLM Fine-Tuning 1 false" class="sc-bSficL bKpYiZ"><span class="sc-eUlrpB sc-eUdMsg dpOfYN iHdudu">LLM Fine-Tuning 1</span></button></div><h3 id="describe-dataset" class="sc-eOzmre iyFMKB">How would you describe this dataset?</h3><div class="sc-qfuyk kBZnBu sc-iGRbbY guURwo" role="group" aria-labelledby="describe-dataset"><button role="button" aria-label="Well-documented 1 false" class="sc-bSficL bKpYiZ"><span class="sc-eUlrpB sc-eUdMsg dpOfYN iHdudu">Well-documented 1</span></button><button role="button" aria-label="Well-maintained 5 false" class="sc-bSficL bKpYiZ"><span class="sc-eUlrpB sc-eUdMsg dpOfYN iHdudu">Well-maintained 5</span></button><button role="button" aria-label="Clean data 0 false" class="sc-bSficL bKpYiZ"><span class="sc-eUlrpB sc-eUdMsg dpOfYN iHdudu">Clean data 0</span></button><button role="button" aria-label="Original 0 false" class="sc-bSficL bKpYiZ"><span class="sc-eUlrpB sc-eUdMsg dpOfYN iHdudu">Original 0</span></button><button role="button" aria-label="High-quality notebooks 1 false" class="sc-bSficL bKpYiZ"><span class="sc-eUlrpB sc-eUdMsg dpOfYN iHdudu">High-quality notebooks 1</span></button><button role="checkbox" aria-checked="false" aria-label="Other" class="sc-bSficL bKpYiZ"><span class="sc-eUlrpB sc-eUdMsg dpOfYN iHdudu">Other</span></button></div></div></div><div class="sc-hGNhLO ccTMQm"></div><div class="sc-hgudia bpuwqA"><div class="sc-zlfrG iIyboH sc-hmjpLd fCIAuA"><div class="sc-eVddSf gZdbWX"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate css-1jgtvd5" aria-hidden="true">text_snippet</span><div class="sc-cgxxSg gYoPRe"><h2 class="sc-cHqXqK sc-dqMHui bTsuQr bnVtSN">Metadata</h2></div></div><button aria-label="Expand All Metadata Sections" tabindex="0" role="button" aria-expanded="false" class="sc-edmcci hdHxFO"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">unfold_more</span><span class="sc-hJRrWL iwZBhE">Expand All</span></button></div><div><div class="sc-kpAHqd lhdEPz"><div class="sc-gvlNCs jdpbhu"><div class="sc-bCztur dnjFQb"><h3 class="sc-ovuCP jgWmzR">Collaborators</h3></div><button aria-label="Expand Collaborators" title="Expand Collaborators" class="sc-cwJYja kWGtZT google-symbols notranslate" aria-expanded="false" style="flex-shrink: 0;">keyboard_arrow_down</button></div></div><div class="sc-kpAHqd lhdEPz"><div class="sc-gvlNCs jdpbhu"><div class="sc-bCztur dnjFQb"><h3 class="sc-ovuCP jgWmzR">Authors</h3></div><button aria-label="Expand Authors" title="Expand Authors" class="sc-cwJYja kWGtZT google-symbols notranslate" aria-expanded="false" style="flex-shrink: 0;">keyboard_arrow_down</button></div></div><div class="sc-kpAHqd lhdEPz"><div class="sc-gvlNCs jdpbhu"><div class="sc-bCztur dnjFQb"><h3 class="sc-ovuCP jgWmzR">Coverage</h3></div><button aria-label="Expand Coverage" title="Expand Coverage" class="sc-cwJYja kWGtZT google-symbols notranslate" aria-expanded="false" style="flex-shrink: 0;">keyboard_arrow_down</button></div></div><div class="sc-kpAHqd lhdEPz"><div class="sc-gvlNCs jdpbhu"><div class="sc-bCztur dnjFQb"><h3 class="sc-ovuCP jgWmzR">DOI Citation</h3></div><button aria-label="Expand DOI Citation" title="Expand DOI Citation" class="sc-cwJYja kWGtZT google-symbols notranslate" aria-expanded="false" style="flex-shrink: 0;">keyboard_arrow_down</button></div></div><div class="sc-kpAHqd lhdEPz"><div class="sc-gvlNCs jdpbhu"><div class="sc-bCztur dnjFQb"><h3 class="sc-ovuCP jgWmzR">Provenance</h3></div><button aria-label="Expand Provenance" title="Expand Provenance" class="sc-cwJYja kWGtZT google-symbols notranslate" aria-expanded="false" style="flex-shrink: 0;">keyboard_arrow_down</button></div></div><div class="sc-kpAHqd lhdEPz"><div class="sc-gvlNCs jdpbhu"><div class="sc-bCztur dnjFQb"><h3 class="sc-ovuCP jgWmzR">License</h3></div><button aria-label="Expand License" title="Expand License" class="sc-cwJYja kWGtZT google-symbols notranslate" aria-expanded="false" style="flex-shrink: 0;">keyboard_arrow_down</button></div></div><div class="sc-kpAHqd lhdEPz"><div class="sc-gvlNCs jdpbhu"><div class="sc-bCztur dnjFQb"><h3 class="sc-ovuCP jgWmzR">Expected Update Frequency</h3></div><button aria-label="Expand Expected Update Frequency" title="Expand Expected Update Frequency" class="sc-cwJYja kWGtZT google-symbols notranslate" aria-expanded="false" style="flex-shrink: 0;">keyboard_arrow_down</button></div></div></div></div><div class="sc-fRQMBa hNkZER"><div class="sc-zlfrG iIyboH sc-dIkuXl bmLZEQ"><div class="sc-eVddSf gZdbWX"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate css-1jgtvd5" aria-hidden="true">insights</span><div class="sc-cgxxSg gYoPRe"><h2 class="sc-cHqXqK sc-dqMHui bTsuQr bnVtSN">Activity Overview</h2></div></div></div><div class="sc-ciSthz izWeDd sc-krsbtf iYoKFZ"><div class="sc-gLtyAP hKZECN"><div class="sc-bCPstD PkYwL"><div class="sc-fycCvx hCQHqA"><div class="sc-BKchU lbThkJ"></div><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate sc-hVSBEW iKzZIN css-1jgtvd5" aria-hidden="true">visibility</span></div><h3 class="sc-eOzmre iyFMKB">Views</h3></div><div class="sc-kLlgCo cZKxDn"><div class="sc-etfZSF lddnvm"></div><div class="sc-ekYfcL jRwKNI"><span class="sc-ovuCP sc-kEbooe jgWmzR kshORy">511K</span><div class="sc-joIbOI jVWtaw sc-iglpeF gbtyFM"><div style="height: 100%; width: 100%;"><div id="reactgooglegraph-1" style="height: 100%; width: 100%;"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 65px; height: 20px;"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;" aria-label="A chart."><svg width="65" height="20" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_0"><clippath id="_ABSTRACT_RENDERER_ID_1"><rect x="0" y="0" width="65" height="20"></rect></clippath></defs><rect x="0" y="0" width="65" height="20" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="0" y="0" width="65" height="20" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database#_ABSTRACT_RENDERER_ID_1)"><g><g><path d="M0.5,19.5L0.5,19.5L0.5,4.431034482758619L2.8703703703703702,5.217241379310343L5.2407407407407405,1.0241379310344811L7.611111111111112,5.086206896551722L9.981481481481481,6.658620689655171L12.351851851851851,6.134482758620688L14.722222222222223,5.741379310344826L17.09259259259259,2.9896551724137908L19.462962962962962,2.203448275862069L21.833333333333332,1.941379310344825L24.203703703703702,5.741379310344826L26.574074074074073,7.706896551724137L28.944444444444446,7.706896551724137L31.314814814814817,5.610344827586205L33.68518518518518,5.741379310344826L36.05555555555556,5.217241379310343L38.425925925925924,5.610344827586205L40.7962962962963,4.5620689655172395L43.166666666666664,8.49310344827586L45.53703703703704,10.589655172413792L47.907407407407405,4.037931034482757L50.27777777777778,1.5482758620689623L52.648148148148145,0.5L55.01851851851852,5.741379310344826L57.38888888888889,8.49310344827586L59.75925925925926,12.03103448275862L62.12962962962963,4.168965517241379L64.5,5.610344827586205L64.5,19.5L64.5,19.5Z" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#20beff"></path></g></g><g><path d="M0.5,4.431034482758619L2.8703703703703702,5.217241379310343L5.2407407407407405,1.0241379310344811L7.611111111111112,5.086206896551722L9.981481481481481,6.658620689655171L12.351851851851851,6.134482758620688L14.722222222222223,5.741379310344826L17.09259259259259,2.9896551724137908L19.462962962962962,2.203448275862069L21.833333333333332,1.941379310344825L24.203703703703702,5.741379310344826L26.574074074074073,7.706896551724137L28.944444444444446,7.706896551724137L31.314814814814817,5.610344827586205L33.68518518518518,5.741379310344826L36.05555555555556,5.217241379310343L38.425925925925924,5.610344827586205L40.7962962962963,4.5620689655172395L43.166666666666664,8.49310344827586L45.53703703703704,10.589655172413792L47.907407407407405,4.037931034482757L50.27777777777778,1.5482758620689623L52.648148148148145,0.5L55.01851851851852,5.741379310344826L57.38888888888889,8.49310344827586L59.75925925925926,12.03103448275862L62.12962962962963,4.168965517241379L64.5,5.610344827586205" stroke="#20beff" stroke-width="1" fill-opacity="1" fill="none"></path></g></g><g></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th>date</th><th>Views</th></tr></thead><tbody><tr><td>Mar 18, 2025</td><td>115</td></tr><tr><td>Mar 19, 2025</td><td>109</td></tr><tr><td>Mar 20, 2025</td><td>141</td></tr><tr><td>Mar 21, 2025</td><td>110</td></tr><tr><td>Mar 22, 2025</td><td>98</td></tr><tr><td>Mar 23, 2025</td><td>102</td></tr><tr><td>Mar 24, 2025</td><td>105</td></tr><tr><td>Mar 25, 2025</td><td>126</td></tr><tr><td>Mar 26, 2025</td><td>132</td></tr><tr><td>Mar 27, 2025</td><td>134</td></tr><tr><td>Mar 28, 2025</td><td>105</td></tr><tr><td>Mar 29, 2025</td><td>90</td></tr><tr><td>Mar 30, 2025</td><td>90</td></tr><tr><td>Mar 31, 2025</td><td>106</td></tr><tr><td>Apr 1, 2025</td><td>105</td></tr><tr><td>Apr 2, 2025</td><td>109</td></tr><tr><td>Apr 3, 2025</td><td>106</td></tr><tr><td>Apr 4, 2025</td><td>114</td></tr><tr><td>Apr 5, 2025</td><td>84</td></tr><tr><td>Apr 6, 2025</td><td>68</td></tr><tr><td>Apr 7, 2025</td><td>118</td></tr><tr><td>Apr 8, 2025</td><td>137</td></tr><tr><td>Apr 9, 2025</td><td>145</td></tr><tr><td>Apr 10, 2025</td><td>105</td></tr><tr><td>Apr 11, 2025</td><td>84</td></tr><tr><td>Apr 12, 2025</td><td>57</td></tr><tr><td>Apr 13, 2025</td><td>117</td></tr><tr><td>Apr 14, 2025</td><td>106</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 30px; left: 75px; white-space: nowrap; font-family: Arial; font-size: 6px; font-weight: bold;"></div><div></div></div></div></div></div></div><div class="sc-djSORc jBhDEc"><span class="sc-hbtGpV hfysfq"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS klTDsr notranslate sc-cWCVeZ bukDSc css-1jgtvd5" aria-hidden="true">trending_up</span>3018</span><span class="sc-hbtGpV hfysfq">in the last 30 days</span></div></div></div><div class="sc-gLtyAP hKZECN"><div class="sc-bCPstD PkYwL"><div class="sc-fycCvx hCQHqA"><div class="sc-BKchU lbThkJ"></div><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate sc-hVSBEW iKzZIN css-1jgtvd5" aria-hidden="true">download</span></div><h3 class="sc-eOzmre iyFMKB">Downloads</h3></div><div class="sc-kLlgCo cZKxDn"><div class="sc-etfZSF lddnvm"></div><div class="sc-ekYfcL jRwKNI"><span class="sc-ovuCP sc-kEbooe jgWmzR kshORy">25.4K</span><div class="sc-joIbOI jVWtaw sc-iglpeF gbtyFM"><div style="height: 100%; width: 100%;"><div id="reactgooglegraph-2" style="height: 100%; width: 100%;"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 65px; height: 20px;"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;" aria-label="A chart."><svg width="65" height="20" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_2"><clippath id="_ABSTRACT_RENDERER_ID_3"><rect x="0" y="0" width="65" height="20"></rect></clippath></defs><rect x="0" y="0" width="65" height="20" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="0" y="0" width="65" height="20" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database#_ABSTRACT_RENDERER_ID_3)"><g><g><path d="M0.5,19.5L0.5,19.5L0.5,14.071428571428571L2.8703703703703702,13.053571428571427L5.2407407407407405,0.5L7.611111111111112,13.392857142857142L9.981481481481481,7.625L12.351851851851851,10.339285714285714L14.722222222222223,12.714285714285714L17.09259259259259,11.696428571428571L19.462962962962962,11.696428571428571L21.833333333333332,12.375L24.203703703703702,10L26.574074074074073,7.9642857142857135L28.944444444444446,15.089285714285715L31.314814814814817,11.696428571428571L33.68518518518518,12.035714285714285L36.05555555555556,4.571428571428571L38.425925925925924,14.071428571428571L40.7962962962963,6.946428571428571L43.166666666666664,15.767857142857142L45.53703703703704,13.732142857142858L47.907407407407405,15.767857142857142L50.27777777777778,10.678571428571429L52.648148148148145,11.017857142857142L55.01851851851852,0.8392857142857117L57.38888888888889,13.392857142857142L59.75925925925926,14.410714285714285L62.12962962962963,2.5357142857142847L64.5,13.732142857142858L64.5,19.5L64.5,19.5Z" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#197631"></path></g></g><g><path d="M0.5,14.071428571428571L2.8703703703703702,13.053571428571427L5.2407407407407405,0.5L7.611111111111112,13.392857142857142L9.981481481481481,7.625L12.351851851851851,10.339285714285714L14.722222222222223,12.714285714285714L17.09259259259259,11.696428571428571L19.462962962962962,11.696428571428571L21.833333333333332,12.375L24.203703703703702,10L26.574074074074073,7.9642857142857135L28.944444444444446,15.089285714285715L31.314814814814817,11.696428571428571L33.68518518518518,12.035714285714285L36.05555555555556,4.571428571428571L38.425925925925924,14.071428571428571L40.7962962962963,6.946428571428571L43.166666666666664,15.767857142857142L45.53703703703704,13.732142857142858L47.907407407407405,15.767857142857142L50.27777777777778,10.678571428571429L52.648148148148145,11.017857142857142L55.01851851851852,0.8392857142857117L57.38888888888889,13.392857142857142L59.75925925925926,14.410714285714285L62.12962962962963,2.5357142857142847L64.5,13.732142857142858" stroke="#197631" stroke-width="1" fill-opacity="1" fill="none"></path></g></g><g></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th>date</th><th>Downloads</th></tr></thead><tbody><tr><td>Mar 18, 2025</td><td>16</td></tr><tr><td>Mar 19, 2025</td><td>19</td></tr><tr><td>Mar 20, 2025</td><td>56</td></tr><tr><td>Mar 21, 2025</td><td>18</td></tr><tr><td>Mar 22, 2025</td><td>35</td></tr><tr><td>Mar 23, 2025</td><td>27</td></tr><tr><td>Mar 24, 2025</td><td>20</td></tr><tr><td>Mar 25, 2025</td><td>23</td></tr><tr><td>Mar 26, 2025</td><td>23</td></tr><tr><td>Mar 27, 2025</td><td>21</td></tr><tr><td>Mar 28, 2025</td><td>28</td></tr><tr><td>Mar 29, 2025</td><td>34</td></tr><tr><td>Mar 30, 2025</td><td>13</td></tr><tr><td>Mar 31, 2025</td><td>23</td></tr><tr><td>Apr 1, 2025</td><td>22</td></tr><tr><td>Apr 2, 2025</td><td>44</td></tr><tr><td>Apr 3, 2025</td><td>16</td></tr><tr><td>Apr 4, 2025</td><td>37</td></tr><tr><td>Apr 5, 2025</td><td>11</td></tr><tr><td>Apr 6, 2025</td><td>17</td></tr><tr><td>Apr 7, 2025</td><td>11</td></tr><tr><td>Apr 8, 2025</td><td>26</td></tr><tr><td>Apr 9, 2025</td><td>25</td></tr><tr><td>Apr 10, 2025</td><td>55</td></tr><tr><td>Apr 11, 2025</td><td>18</td></tr><tr><td>Apr 12, 2025</td><td>15</td></tr><tr><td>Apr 13, 2025</td><td>50</td></tr><tr><td>Apr 14, 2025</td><td>17</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 30px; left: 75px; white-space: nowrap; font-family: Arial; font-size: 6px; font-weight: bold;"></div><div></div></div></div></div></div></div><div class="sc-djSORc jBhDEc"><span class="sc-hbtGpV hfysfq"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS kzhOux notranslate sc-cWCVeZ bukDSc css-1jgtvd5" aria-hidden="true">trending_up</span>720</span><span class="sc-hbtGpV hfysfq">in the last 30 days</span></div></div></div><div class="sc-gLtyAP hKZECN"><div class="sc-bCPstD PkYwL"><div class="sc-fycCvx hCQHqA"><div class="sc-BKchU lbThkJ"></div><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate sc-hVSBEW iKzZIN css-1jgtvd5" aria-hidden="true">downloading</span></div><h3 class="sc-eOzmre iyFMKB">Engagement</h3></div><div class="sc-kLlgCo cZKxDn"><div class="sc-etfZSF lddnvm"></div><div class="sc-dNiRfD iWLeDW"><span class="sc-ovuCP sc-kgmaqW jgWmzR fkZyxp">0.04958</span></div><div class="sc-djHZRS iWzWIT"><span class="sc-hbtGpV hfysfq"> downloads per view</span></div></div></div><div class="sc-gLtyAP hKZECN"><div class="sc-bCPstD PkYwL"><div class="sc-fycCvx hCQHqA"><div class="sc-BKchU lbThkJ"></div><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate sc-hVSBEW iKzZIN css-1jgtvd5" aria-hidden="true">forum</span></div><h3 class="sc-eOzmre iyFMKB">Comments</h3></div><div class="sc-kLlgCo cZKxDn"><div class="sc-etfZSF lddnvm"></div><div class="sc-dNiRfD iWLeDW"><span class="sc-ovuCP sc-kgmaqW jgWmzR fkZyxp">21</span></div><div class="sc-djHZRS iWzWIT"><span class="sc-hbtGpV hfysfq"> posted</span></div></div></div><div class="sc-gLtyAP hKZECN"><div class="sc-bCPstD PkYwL"><span class=""><div class="sc-fycCvx hCQHqA"><div class="sc-BKchU lbThkJ"></div><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate sc-hVSBEW iKzZIN css-1jgtvd5" aria-hidden="true">person</span></div></span><h3 class="sc-eOzmre iyFMKB">Top Contributors</h3></div><div class="sc-kLlgCo cZKxDn"><div class="sc-etfZSF lddnvm"></div><div class="sc-igYCHf gcwCcP"><a href="https://www.kaggle.com/shivam316" aria-label="Shivam Sharma&#39;s profile" class="sc-ehIYnC jNnqAS" style="margin-right: 16px;"><div data-testid="avatar-image" title="Shivam Sharma" class="sc-iDAWOb inETPj" style="background-image: url(&quot;https://storage.googleapis.com/kaggle-avatars/thumbnails/5153834-kg.jpg&quot;);"></div><svg width="32" height="32" viewBox="0 0 32 32"><circle r="15" cx="16" cy="16" fill="none" stroke-width="2" style="stroke: rgb(241, 243, 244);"></circle><path d="M 24.816778784387097 28.135254915624213 A 15 15 0 0 0 16 1" fill="none" stroke-width="2" style="stroke: rgb(32, 190, 255);"></path></svg></a><a href="https://www.kaggle.com/eatmygoose" aria-label="EatMyGoose&#39;s profile" class="sc-ehIYnC jNnqAS" style="margin-right: 16px;"><div data-testid="avatar-image" title="EatMyGoose" class="sc-iDAWOb inETPj" style="background-image: url(&quot;https://storage.googleapis.com/kaggle-avatars/thumbnails/2853634-kg.png&quot;);"></div><svg width="32" height="32" viewBox="0 0 32 32"><circle r="15" cx="16" cy="16" fill="none" stroke-width="2" style="stroke: rgb(241, 243, 244);"></circle><path d="M 30.265847744427305 11.36474508437579 A 15 15 0 0 0 16 1" fill="none" stroke-width="2" style="stroke: rgb(31, 166, 65);"></path></svg></a><a href="https://www.kaggle.com/vbookshelf" aria-label="vbookshelf&#39;s profile" class="sc-ehIYnC jNnqAS" style="margin-right: 16px;"><div data-testid="avatar-image" title="vbookshelf" class="sc-iDAWOb inETPj" style="background-image: url(&quot;https://storage.googleapis.com/kaggle-avatars/thumbnails/1086574-kg.jpg&quot;);"></div><svg width="32" height="32" viewBox="0 0 32 32"><circle r="15" cx="16" cy="16" fill="none" stroke-width="2" style="stroke: rgb(241, 243, 244);"></circle><path d="M 7.183221215612905 28.135254915624213 A 15 15 0 1 0 16 1" fill="none" stroke-width="2" style="stroke: rgb(129, 72, 253);"></path></svg></a></div></div></div></div><div class="sc-kpAHqd lhdEPz sc-abIod cEDqYE"><div class="sc-gvlNCs jdpbhu"><div class="sc-bCztur dnjFQb"><h3 class="sc-ovuCP jgWmzR">Detail View</h3></div><button aria-label="Collapse Detail View" title="Collapse Detail View" class="sc-cwJYja kWGtZT google-symbols notranslate" aria-expanded="true" style="flex-shrink: 0;">keyboard_arrow_up</button></div><div><div class="sc-fubyDS lnrLvn"><div class="sc-ljusIj ReVIF sc-eiARxu gMLYdH"><div class="sc-jieQrC feBrdo"><h4 class="sc-eOzmre sc-jeszdZ iyFMKB iOtKdj">Views</h4><div class="MuiFormControl-root sc-gcfzXs gBeCIa sc-hdcWNs jbpjkN css-13sljp9"><div class="MuiInputBase-root MuiInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1pby7ch"><div tabindex="0" role="combobox" aria-controls=":r8:" aria-expanded="false" aria-haspopup="listbox" aria-label="Select combobox. Last month currently selected." class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input css-1ii1y2a"><div class="sc-hGZxvd emsMoT"><div class="sc-fFoeYl tvNbw">Last month</div></div></div><input aria-invalid="false" aria-hidden="true" tabindex="-1" class="MuiSelect-nativeInput css-1k3x8v3" value="[object Object]"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconStandard css-1utq5rl" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowDropDownIcon"><path d="M7 10l5 5 5-5z"></path></svg></div></div></div><div><div id="reactgooglegraph-3" class="sc-iAXzRi ctzqAS"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 580px; height: 200px;"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;" aria-label="A chart."><svg width="580" height="200" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_4"><clippath id="_ABSTRACT_RENDERER_ID_5"><rect x="44" y="38" width="493" height="124"></rect></clippath></defs><rect x="0" y="0" width="580" height="200" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="44" y="38" width="493" height="124" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database#_ABSTRACT_RENDERER_ID_5)"><g><rect x="44" y="161" width="493" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="44" y="120" width="493" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="44" y="79" width="493" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="44" y="38" width="493" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect></g><g><path d="M44.5,67.2L62.72222222222222,72.12L80.94444444444444,45.88000000000001L99.16666666666666,71.30000000000001L117.38888888888889,81.14L135.6111111111111,77.86L153.83333333333331,75.4L172.05555555555554,58.18000000000001L190.27777777777777,53.260000000000005L208.5,51.620000000000005L226.7222222222222,75.4L244.94444444444443,87.7L263.16666666666663,87.7L281.3888888888889,74.58L299.6111111111111,75.4L317.8333333333333,72.12L336.05555555555554,74.58L354.27777777777777,68.02000000000001L372.5,92.62L390.72222222222223,105.74000000000001L408.9444444444444,64.74000000000001L427.16666666666663,49.16000000000001L445.38888888888886,42.60000000000001L463.6111111111111,75.4L481.8333333333333,92.62L500.05555555555554,114.76L518.2777777777778,65.56L536.5,74.58" stroke="#20beff" stroke-width="2" fill-opacity="1" fill="none"></path></g></g><g></g><g><g><text text-anchor="middle" x="149.6574074074074" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">03/24</text></g><g><text text-anchor="middle" x="277.21296296296293" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">03/31</text></g><g><text text-anchor="middle" x="404.7685185185185" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">04/07</text></g><g><text text-anchor="middle" x="532.324074074074" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">04/14</text></g><g><text text-anchor="end" x="32" y="165.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">0</text></g><g><text text-anchor="end" x="32" y="124.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">50</text></g><g><text text-anchor="end" x="32" y="83.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">100</text></g><g><text text-anchor="end" x="32" y="42.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">150</text></g></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th>date</th><th>Views</th></tr></thead><tbody><tr><td>Mar 18, 2025</td><td>115</td></tr><tr><td>Mar 19, 2025</td><td>109</td></tr><tr><td>Mar 20, 2025</td><td>141</td></tr><tr><td>Mar 21, 2025</td><td>110</td></tr><tr><td>Mar 22, 2025</td><td>98</td></tr><tr><td>Mar 23, 2025</td><td>102</td></tr><tr><td>Mar 24, 2025</td><td>105</td></tr><tr><td>Mar 25, 2025</td><td>126</td></tr><tr><td>Mar 26, 2025</td><td>132</td></tr><tr><td>Mar 27, 2025</td><td>134</td></tr><tr><td>Mar 28, 2025</td><td>105</td></tr><tr><td>Mar 29, 2025</td><td>90</td></tr><tr><td>Mar 30, 2025</td><td>90</td></tr><tr><td>Mar 31, 2025</td><td>106</td></tr><tr><td>Apr 1, 2025</td><td>105</td></tr><tr><td>Apr 2, 2025</td><td>109</td></tr><tr><td>Apr 3, 2025</td><td>106</td></tr><tr><td>Apr 4, 2025</td><td>114</td></tr><tr><td>Apr 5, 2025</td><td>84</td></tr><tr><td>Apr 6, 2025</td><td>68</td></tr><tr><td>Apr 7, 2025</td><td>118</td></tr><tr><td>Apr 8, 2025</td><td>137</td></tr><tr><td>Apr 9, 2025</td><td>145</td></tr><tr><td>Apr 10, 2025</td><td>105</td></tr><tr><td>Apr 11, 2025</td><td>84</td></tr><tr><td>Apr 12, 2025</td><td>57</td></tr><tr><td>Apr 13, 2025</td><td>117</td></tr><tr><td>Apr 14, 2025</td><td>106</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 210px; left: 590px; white-space: nowrap; font-family: Arial; font-size: 12px;">150</div><div></div></div></div></div></div><div class="sc-ljusIj ReVIF sc-eiARxu gMLYdH"><div class="sc-jieQrC feBrdo"><h4 class="sc-eOzmre sc-jeszdZ iyFMKB iOtKdj">Downloads</h4><div class="MuiFormControl-root sc-gcfzXs gBeCIa sc-hdcWNs jbpjkN css-13sljp9"><div class="MuiInputBase-root MuiInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1pby7ch"><div tabindex="0" role="combobox" aria-controls=":ra:" aria-expanded="false" aria-haspopup="listbox" aria-label="Select combobox. Last month currently selected." class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input css-1ii1y2a"><div class="sc-hGZxvd emsMoT"><div class="sc-fFoeYl tvNbw">Last month</div></div></div><input aria-invalid="false" aria-hidden="true" tabindex="-1" class="MuiSelect-nativeInput css-1k3x8v3" value="[object Object]"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconStandard css-1utq5rl" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowDropDownIcon"><path d="M7 10l5 5 5-5z"></path></svg></div></div></div><div><div id="reactgooglegraph-4" class="sc-iAXzRi ctzqAS"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 580px; height: 200px;"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;" aria-label="A chart."><svg width="580" height="200" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_6"><clippath id="_ABSTRACT_RENDERER_ID_7"><rect x="44" y="38" width="493" height="124"></rect></clippath></defs><rect x="0" y="0" width="580" height="200" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="44" y="38" width="493" height="124" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database#_ABSTRACT_RENDERER_ID_7)"><g><rect x="44" y="161" width="493" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="44" y="120" width="493" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="44" y="79" width="493" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="44" y="38" width="493" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect></g><g><path d="M44.5,128.7L62.72222222222222,122.55000000000001L80.94444444444444,46.70000000000002L99.16666666666666,124.6L117.38888888888889,89.75L135.6111111111111,106.15L153.83333333333331,120.5L172.05555555555554,114.35L190.27777777777777,114.35L208.5,118.45L226.7222222222222,104.10000000000001L244.94444444444443,91.80000000000001L263.16666666666663,134.85L281.3888888888889,114.35L299.6111111111111,116.4L317.8333333333333,71.30000000000001L336.05555555555554,128.7L354.27777777777777,85.65L372.5,138.95L390.72222222222223,126.65L408.9444444444444,138.95L427.16666666666663,108.2L445.38888888888886,110.25L463.6111111111111,48.750000000000014L481.8333333333333,124.6L500.05555555555554,130.75L518.2777777777778,59.000000000000014L536.5,126.65" stroke="#197631" stroke-width="2" fill-opacity="1" fill="none"></path></g></g><g></g><g><g><text text-anchor="middle" x="149.6574074074074" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">03/24</text></g><g><text text-anchor="middle" x="277.21296296296293" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">03/31</text></g><g><text text-anchor="middle" x="404.7685185185185" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">04/07</text></g><g><text text-anchor="middle" x="532.324074074074" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">04/14</text></g><g><text text-anchor="end" x="32" y="165.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">0</text></g><g><text text-anchor="end" x="32" y="124.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">20</text></g><g><text text-anchor="end" x="32" y="83.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">40</text></g><g><text text-anchor="end" x="32" y="42.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">60</text></g></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th>date</th><th>Downloads</th></tr></thead><tbody><tr><td>Mar 18, 2025</td><td>16</td></tr><tr><td>Mar 19, 2025</td><td>19</td></tr><tr><td>Mar 20, 2025</td><td>56</td></tr><tr><td>Mar 21, 2025</td><td>18</td></tr><tr><td>Mar 22, 2025</td><td>35</td></tr><tr><td>Mar 23, 2025</td><td>27</td></tr><tr><td>Mar 24, 2025</td><td>20</td></tr><tr><td>Mar 25, 2025</td><td>23</td></tr><tr><td>Mar 26, 2025</td><td>23</td></tr><tr><td>Mar 27, 2025</td><td>21</td></tr><tr><td>Mar 28, 2025</td><td>28</td></tr><tr><td>Mar 29, 2025</td><td>34</td></tr><tr><td>Mar 30, 2025</td><td>13</td></tr><tr><td>Mar 31, 2025</td><td>23</td></tr><tr><td>Apr 1, 2025</td><td>22</td></tr><tr><td>Apr 2, 2025</td><td>44</td></tr><tr><td>Apr 3, 2025</td><td>16</td></tr><tr><td>Apr 4, 2025</td><td>37</td></tr><tr><td>Apr 5, 2025</td><td>11</td></tr><tr><td>Apr 6, 2025</td><td>17</td></tr><tr><td>Apr 7, 2025</td><td>11</td></tr><tr><td>Apr 8, 2025</td><td>26</td></tr><tr><td>Apr 9, 2025</td><td>25</td></tr><tr><td>Apr 10, 2025</td><td>55</td></tr><tr><td>Apr 11, 2025</td><td>18</td></tr><tr><td>Apr 12, 2025</td><td>15</td></tr><tr><td>Apr 13, 2025</td><td>50</td></tr><tr><td>Apr 14, 2025</td><td>17</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 210px; left: 590px; white-space: nowrap; font-family: Arial; font-size: 12px;">60</div><div></div></div></div></div></div></div></div></div></div><div><div class="sc-bssqIm fTMhdJ"><div class="sc-fEJpot Wqsku"><div class="sc-zlfrG iIyboH"><div class="sc-eVddSf gZdbWX"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate css-1jgtvd5" aria-hidden="true">code</span><div class="sc-cgxxSg gYoPRe"><h2 class="sc-cHqXqK sc-gCpwsF bTsuQr jrXlpc">Related Notebooks</h2></div></div><button aria-label="See all Related Notebooks " data-testid="expandButton" tabindex="0" role="button" class="sc-edmcci iDanTn"><span class="sc-hJRrWL iwZBhE">See all</span></button></div></div><div role="list" class="sc-IqPaQ dZXjyy"><div role="listitem" aria-label="CNN: Detection of wheezes and crackles" class="sc-goKQVP sc-eyWYfq fZpWYI iuZkPC"><a tabindex="0" href="https://www.kaggle.com/code/eatmygoose/cnn-detection-of-wheezes-and-crackles" class="sc-kkLoAj iDOooK" style="flex-grow: 1;"><img src="./Respiratory Sound Database_files/__results___15_1.png" alt="" class="sc-hOwhjp hQFdVj"><div class="sc-ehSesU cXuTTR"><div class="sc-jvoOHE iokMIn"><div class="sc-eauhAA sc-fNgESI hnTMYu jVaASD" style="max-height: 3em; overflow: hidden;">CNN: Detection of wheezes and crackles</div><div style="margin-top: -8px; margin-right: -16px;"><button aria-label="More options for this notebook" title="More options for this notebook" class="sc-cwJYja jisiwE google-symbols notranslate sc-bItomY kEoBCk">more_vert</button></div></div><div><span class="sc-geXuza sc-gAmAvX eJddeL iPyhIb">Updated <span title="Mon Mar 18 2019 22:29:08 GMT+0530 (India Standard Time)" aria-label="6 years ago">6 years ago</span></span></div><div><span class="sc-geXuza sc-gAmAvX eJddeL iPyhIb">Respiratory Sound Database</span></div></div></a><div class="sc-kwETSx gXsGbQ"><div class="sc-buUSia eEsDJV"><span class=""><button mode="default" data-testid="upvotebutton__upvote" aria-label="Upvote" title="Upvote" class="sc-iJYoKY sc-bQuDMB gqUluj cehRdu"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">arrow_drop_up</span></button></span><span mode="default" aria-live="polite" aria-label="61 votes" class="sc-hJRrWL sc-fQMQIz iwZBhE rEoLB">61</span></div><div class="sc-ivprBQ fmOCbf"><img alt="silver medal" src="./Respiratory Sound Database_files/silvers@2x.png" title="silver medal" class="sc-jRhXTL jlGPlW"><a href="https://www.kaggle.com/eatmygoose" target="_blank" aria-label="EatMyGoose&#39;s profile (opens in a new tab)" class="sc-ehIYnC jNnqAS"><div data-testid="avatar-image" title="EatMyGoose" class="sc-iDAWOb bOrkAL" style="background-image: url(&quot;https://storage.googleapis.com/kaggle-avatars/thumbnails/2853634-kg.png&quot;);"></div><svg width="24" height="24" viewBox="0 0 24 24"><circle r="11" cx="12" cy="12" fill="none" stroke-width="2" style="stroke: rgb(241, 243, 244);"></circle><path d="M 22.46162167924669 8.600813061875579 A 11 11 0 0 0 12 1" fill="none" stroke-width="2" style="stroke: rgb(31, 166, 65);"></path></svg></a></div></div></div><div role="listitem" aria-label="Play Audio, Read the Files, Create a Spectrogram" class="sc-goKQVP sc-eyWYfq fZpWYI iuZkPC"><a tabindex="0" href="https://www.kaggle.com/code/vbookshelf/play-audio-read-the-files-create-a-spectrogram" class="sc-kkLoAj iDOooK" style="flex-grow: 1;"><img src="./Respiratory Sound Database_files/__results___31_0.png" alt="" class="sc-hOwhjp hQFdVj"><div class="sc-ehSesU cXuTTR"><div class="sc-jvoOHE iokMIn"><div class="sc-eauhAA sc-fNgESI hnTMYu jVaASD" style="max-height: 3em; overflow: hidden;">Play Audio, Read the Files, Create a Spectrogram</div><div style="margin-top: -8px; margin-right: -16px;"><button aria-label="More options for this notebook" title="More options for this notebook" class="sc-cwJYja jisiwE google-symbols notranslate sc-bItomY kEoBCk">more_vert</button></div></div><div><span class="sc-geXuza sc-gAmAvX eJddeL iPyhIb">Updated <span title="Tue Jan 29 2019 13:03:22 GMT+0530 (India Standard Time)" aria-label="6 years ago">6 years ago</span></span></div><div><span class="sc-geXuza sc-gAmAvX eJddeL iPyhIb">Respiratory Sound Database</span></div></div></a><div class="sc-kwETSx gXsGbQ"><div class="sc-buUSia eEsDJV"><span class=""><button mode="default" data-testid="upvotebutton__upvote" aria-label="Upvote" title="Upvote" class="sc-iJYoKY sc-bQuDMB gqUluj cehRdu"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">arrow_drop_up</span></button></span><span mode="default" aria-live="polite" aria-label="37 votes" class="sc-hJRrWL sc-fQMQIz iwZBhE rEoLB">37</span></div><div class="sc-ivprBQ fmOCbf"><img alt="bronze medal" src="./Respiratory Sound Database_files/bronzes@2x.png" title="bronze medal" class="sc-jRhXTL jlGPlW"><a href="https://www.kaggle.com/vbookshelf" target="_blank" aria-label="vbookshelf&#39;s profile (opens in a new tab)" class="sc-ehIYnC jNnqAS"><div data-testid="avatar-image" title="vbookshelf" class="sc-iDAWOb bOrkAL" style="background-image: url(&quot;https://storage.googleapis.com/kaggle-avatars/thumbnails/1086574-kg.jpg&quot;);"></div><svg width="24" height="24" viewBox="0 0 24 24"><circle r="11" cx="12" cy="12" fill="none" stroke-width="2" style="stroke: rgb(241, 243, 244);"></circle><path d="M 5.534362224782797 20.899186938124423 A 11 11 0 1 0 12 1" fill="none" stroke-width="2" style="stroke: rgb(129, 72, 253);"></path></svg></a></div></div></div><div role="listitem" aria-label="(Part -2)  Handel Imbalance &amp; Creating Spectrogram" class="sc-goKQVP sc-eyWYfq fZpWYI iuZkPC"><a tabindex="0" href="https://www.kaggle.com/code/shivam316/part-2-handel-imbalance-creating-spectrogram" class="sc-kkLoAj iDOooK" style="flex-grow: 1;"><img src="./Respiratory Sound Database_files/__results___10_1.png" alt="" class="sc-hOwhjp hQFdVj"><div class="sc-ehSesU cXuTTR"><div class="sc-jvoOHE iokMIn"><div class="sc-eauhAA sc-fNgESI hnTMYu jVaASD" style="max-height: 3em; overflow: hidden;">(Part -2)  Handel Imbalance &amp; Creating Spectrogram</div><div style="margin-top: -8px; margin-right: -16px;"><button aria-label="More options for this notebook" title="More options for this notebook" class="sc-cwJYja jisiwE google-symbols notranslate sc-bItomY kEoBCk">more_vert</button></div></div><div><span class="sc-geXuza sc-gAmAvX eJddeL iPyhIb">Updated <span title="Thu Sep 24 2020 17:31:23 GMT+0530 (India Standard Time)" aria-label="5 years ago">5 years ago</span></span></div><div><span class="sc-geXuza sc-gAmAvX eJddeL iPyhIb">Respiratory Sound Database+1</span></div></div></a><div class="sc-kwETSx gXsGbQ"><div class="sc-buUSia eEsDJV"><span class=""><button mode="default" data-testid="upvotebutton__upvote" aria-label="Upvote" title="Upvote" class="sc-iJYoKY sc-bQuDMB gqUluj cehRdu"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">arrow_drop_up</span></button></span><span mode="default" aria-live="polite" aria-label="29 votes" class="sc-hJRrWL sc-fQMQIz iwZBhE rEoLB">29</span></div><div class="sc-ivprBQ fmOCbf"><img alt="bronze medal" src="./Respiratory Sound Database_files/bronzes@2x.png" title="bronze medal" class="sc-jRhXTL jlGPlW"><a href="https://www.kaggle.com/shivam316" target="_blank" aria-label="Shivam Sharma&#39;s profile (opens in a new tab)" class="sc-ehIYnC jNnqAS"><div data-testid="avatar-image" title="Shivam Sharma" class="sc-iDAWOb bOrkAL" style="background-image: url(&quot;https://storage.googleapis.com/kaggle-avatars/thumbnails/5153834-kg.jpg&quot;);"></div><svg width="24" height="24" viewBox="0 0 24 24"><circle r="11" cx="12" cy="12" fill="none" stroke-width="2" style="stroke: rgb(241, 243, 244);"></circle><path d="M 18.465637775217203 20.899186938124423 A 11 11 0 0 0 12 1" fill="none" stroke-width="2" style="stroke: rgb(32, 190, 255);"></path></svg></a></div></div></div></div></div><div class="sc-bssqIm fTMhdJ"><div class="sc-fEJpot Wqsku"><div class="sc-zlfrG iIyboH"><div class="sc-eVddSf gZdbWX"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate css-1jgtvd5" aria-hidden="true">table_chart</span><div class="sc-cgxxSg gYoPRe"><h2 class="sc-cHqXqK sc-gCpwsF bTsuQr jrXlpc">Similar Datasets</h2></div></div></div></div><div role="list" class="sc-IqPaQ dZXjyy"><div role="listitem" aria-label="COVID-19 Open Research Dataset Challenge (CORD-19)" class="sc-goKQVP sc-eyWYfq fZpWYI iuZkPC"><a id="551982" tabindex="0" href="https://www.kaggle.com/datasets/allen-institute-for-ai/CORD-19-research-challenge" class="sc-kkLoAj iDOooK"><img src="./Respiratory Sound Database_files/dataset-thumbnail.png" alt="" class="sc-hOwhjp hQFdVj"><div class="sc-ehSesU cXuTTR"><div class="sc-la-DphI btMuIj"><div class="sc-eauhAA sc-fNgESI sc-dkXbiJ hnTMYu jVaASD hEdZNV">COVID-19 Open Research Dataset Challenge (CORD-19)</div><button aria-label="More options for this dataset" title="More options for this dataset" class="sc-cwJYja jisiwE google-symbols notranslate">more_vert</button></div><div class="sc-hlUanT cyMnLo"><span class="sc-geXuza sc-gAmAvX eJddeL iPyhIb"><a class="sc-uYFMi jZWMzp" href="https://www.kaggle.com/organizations/allen-institute-for-ai">Allen Institute For AI</a> · Updated <span title="Tue Jun 07 2022 01:09:40 GMT+0530 (India Standard Time)" aria-label="3 years ago">3 years ago</span></span></div><div class="sc-hlUanT cyMnLo"><span class="sc-geXuza sc-gAmAvX eJddeL iPyhIb"><span class=""><span>Usability&nbsp;<span class="sc-jcwefW mEliv">8.8</span></span></span> · 20 GB</span></div><div class="sc-hlUanT cyMnLo"><span class="sc-geXuza sc-gAmAvX eJddeL iPyhIb">717120 Files (JSON, CSV, other)</span></div></div></a><div class="sc-kwETSx gXsGbQ"><div class="sc-buUSia eEsDJV"><span class=""><button mode="default" data-testid="upvotebutton__upvote" aria-label="Upvote" title="Upvote" class="sc-iJYoKY sc-bQuDMB gqUluj cehRdu"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">arrow_drop_up</span></button></span><span mode="default" aria-live="polite" aria-label="11106 votes" class="sc-hJRrWL sc-fQMQIz iwZBhE rEoLB">11106</span></div><div class="sc-eHAfWp ldfkOU"><img role="presentation" alt="" src="./Respiratory Sound Database_files/goldl@2x.png" class="sc-cpBAaq grbpVa"> <a href="https://www.kaggle.com/organizations/allen-institute-for-ai" target="_blank" aria-label="Allen Institute For AI&#39;s profile (opens in a new tab)" class="sc-ehIYnC hbKEEN"><div data-testid="avatar-image" title="Allen Institute For AI" class="sc-iDAWOb bOrkAL" style="background-image: url(&quot;https://storage.googleapis.com/kaggle-organizations/3737/thumbnail.png?r=807&quot;);"></div><svg width="24" height="24" viewBox="0 0 24 24"><circle r="11" cx="12" cy="12" fill="none" stroke-width="2" style="stroke: transparent;"></circle><circle r="11" cx="12" cy="12" fill="none" stroke-width="2" style="stroke: rgb(32, 33, 36);"></circle></svg></a></div></div></div><div role="listitem" aria-label="Chest X-Ray Images (Pneumonia)" class="sc-goKQVP sc-eyWYfq fZpWYI iuZkPC"><a id="17810" tabindex="0" href="https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia" class="sc-kkLoAj iDOooK"><img src="./Respiratory Sound Database_files/dataset-thumbnail.jpeg" alt="" class="sc-hOwhjp hQFdVj"><div class="sc-ehSesU cXuTTR"><div class="sc-la-DphI btMuIj"><div class="sc-eauhAA sc-fNgESI sc-dkXbiJ hnTMYu jVaASD hEdZNV">Chest X-Ray Images (Pneumonia)</div><button aria-label="More options for this dataset" title="More options for this dataset" class="sc-cwJYja jisiwE google-symbols notranslate">more_vert</button></div><div class="sc-hlUanT cyMnLo"><span class="sc-geXuza sc-gAmAvX eJddeL iPyhIb"><a class="sc-uYFMi jZWMzp" href="https://www.kaggle.com/paultimothymooney">Paul Mooney</a> · Updated <span title="Sun Mar 25 2018 01:11:59 GMT+0530 (India Standard Time)" aria-label="7 years ago">7 years ago</span></span></div><div class="sc-hlUanT cyMnLo"><span class="sc-geXuza sc-gAmAvX eJddeL iPyhIb"><span class=""><span>Usability&nbsp;<span class="sc-jcwefW mEliv">7.5</span></span></span> · 2 GB</span></div><div class="sc-hlUanT cyMnLo"><span class="sc-geXuza sc-gAmAvX eJddeL iPyhIb">5856 Files (other)</span></div></div></a><div class="sc-kwETSx gXsGbQ"><div class="sc-buUSia eEsDJV"><span class=""><button mode="default" data-testid="upvotebutton__upvote" aria-label="Upvote" title="Upvote" class="sc-iJYoKY sc-bQuDMB gqUluj cehRdu"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">arrow_drop_up</span></button></span><span mode="default" aria-live="polite" aria-label="6868 votes" class="sc-hJRrWL sc-fQMQIz iwZBhE rEoLB">6868</span></div><div class="sc-eHAfWp ldfkOU"><img role="presentation" alt="" src="./Respiratory Sound Database_files/goldl@2x.png" class="sc-cpBAaq grbpVa"> <a href="https://www.kaggle.com/paultimothymooney" target="_blank" aria-label="Paul Mooney&#39;s profile (opens in a new tab)" class="sc-ehIYnC jNnqAS"><div data-testid="avatar-image" title="Paul Mooney" class="sc-iDAWOb bOrkAL" style="background-image: url(&quot;https://storage.googleapis.com/kaggle-avatars/thumbnails/1314380-kg.JPG&quot;);"></div><svg width="24" height="24" viewBox="0 0 24 24"><circle r="11" cx="12" cy="12" fill="none" stroke-width="2" style="stroke: rgb(241, 243, 244);"></circle><circle r="11" cx="12" cy="12" fill="none" stroke-width="2" style="stroke: rgb(32, 33, 36);"></circle></svg></a></div></div></div><div role="listitem" aria-label="Novel Corona Virus 2019 Dataset" class="sc-goKQVP sc-eyWYfq fZpWYI iuZkPC"><a id="494724" tabindex="0" href="https://www.kaggle.com/datasets/sudalairajkumar/novel-corona-virus-2019-dataset" class="sc-kkLoAj iDOooK"><img src="./Respiratory Sound Database_files/dataset-thumbnail(1).png" alt="" class="sc-hOwhjp hQFdVj"><div class="sc-ehSesU cXuTTR"><div class="sc-la-DphI btMuIj"><div class="sc-eauhAA sc-fNgESI sc-dkXbiJ hnTMYu jVaASD hEdZNV">Novel Corona Virus 2019 Dataset</div><button aria-label="More options for this dataset" title="More options for this dataset" class="sc-cwJYja jisiwE google-symbols notranslate">more_vert</button></div><div class="sc-hlUanT cyMnLo"><span class="sc-geXuza sc-gAmAvX eJddeL iPyhIb"><a class="sc-uYFMi jZWMzp" href="https://www.kaggle.com/sudalairajkumar">SRK</a> · Updated <span title="Thu Jun 24 2021 09:57:25 GMT+0530 (India Standard Time)" aria-label="4 years ago">4 years ago</span></span></div><div class="sc-hlUanT cyMnLo"><span class="sc-geXuza sc-gAmAvX eJddeL iPyhIb"><span class=""><span>Usability&nbsp;<span class="sc-jcwefW fzpTa-D">9.7</span></span></span> · 9 MB</span></div><div class="sc-hlUanT cyMnLo"><span class="sc-geXuza sc-gAmAvX eJddeL iPyhIb">6 Files (CSV)</span></div></div></a><div class="sc-kwETSx gXsGbQ"><div class="sc-buUSia eEsDJV"><span class=""><button mode="default" data-testid="upvotebutton__upvote" aria-label="Upvote" title="Upvote" class="sc-iJYoKY sc-bQuDMB gqUluj cehRdu"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">arrow_drop_up</span></button></span><span mode="default" aria-live="polite" aria-label="6244 votes" class="sc-hJRrWL sc-fQMQIz iwZBhE rEoLB">6244</span></div><div class="sc-eHAfWp ldfkOU"><img role="presentation" alt="" src="./Respiratory Sound Database_files/goldl@2x.png" class="sc-cpBAaq grbpVa"> <a href="https://www.kaggle.com/sudalairajkumar" target="_blank" aria-label="SRK&#39;s profile (opens in a new tab)" class="sc-ehIYnC jNnqAS"><div data-testid="avatar-image" title="SRK" class="sc-iDAWOb bOrkAL" style="background-image: url(&quot;https://storage.googleapis.com/kaggle-avatars/thumbnails/71388-kg.jpg&quot;);"></div><svg width="24" height="24" viewBox="0 0 24 24"><circle r="11" cx="12" cy="12" fill="none" stroke-width="2" style="stroke: rgb(241, 243, 244);"></circle><circle r="11" cx="12" cy="12" fill="none" stroke-width="2" style="stroke: rgb(235, 204, 41);"></circle></svg></a></div></div></div><div role="listitem" aria-label="Pima Indians Diabetes Database" class="sc-goKQVP sc-eyWYfq fZpWYI iuZkPC"><a id="228" tabindex="0" href="https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database" class="sc-kkLoAj iDOooK"><img src="./Respiratory Sound Database_files/dataset-thumbnail(2).jpeg" alt="" class="sc-hOwhjp hQFdVj"><div class="sc-ehSesU cXuTTR"><div class="sc-la-DphI btMuIj"><div class="sc-eauhAA sc-fNgESI sc-dkXbiJ hnTMYu jVaASD hEdZNV">Pima Indians Diabetes Database</div><button aria-label="More options for this dataset" title="More options for this dataset" class="sc-cwJYja jisiwE google-symbols notranslate">more_vert</button></div><div class="sc-hlUanT cyMnLo"><span class="sc-geXuza sc-gAmAvX eJddeL iPyhIb"><a class="sc-uYFMi jZWMzp" href="https://www.kaggle.com/organizations/uciml">UCI Machine Learning</a> · Updated <span title="Fri Oct 07 2016 00:01:56 GMT+0530 (India Standard Time)" aria-label="9 years ago">9 years ago</span></span></div><div class="sc-hlUanT cyMnLo"><span class="sc-geXuza sc-gAmAvX eJddeL iPyhIb"><span class=""><span>Usability&nbsp;<span class="sc-jcwefW mEliv">8.8</span></span></span> · 9 kB</span></div><div class="sc-hlUanT cyMnLo"><span class="sc-geXuza sc-gAmAvX eJddeL iPyhIb">1 File (CSV)</span></div></div></a><div class="sc-kwETSx gXsGbQ"><div class="sc-buUSia eEsDJV"><span class=""><button mode="default" data-testid="upvotebutton__upvote" aria-label="Upvote" title="Upvote" class="sc-iJYoKY sc-bQuDMB gqUluj cehRdu"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">arrow_drop_up</span></button></span><span mode="default" aria-live="polite" aria-label="4538 votes" class="sc-hJRrWL sc-fQMQIz iwZBhE rEoLB">4538</span></div><div class="sc-eHAfWp ldfkOU"><img role="presentation" alt="" src="./Respiratory Sound Database_files/goldl@2x.png" class="sc-cpBAaq grbpVa"> <a href="https://www.kaggle.com/organizations/uciml" target="_blank" aria-label="UCI Machine Learning&#39;s profile (opens in a new tab)" class="sc-ehIYnC hbKEEN"><div data-testid="avatar-image" title="UCI Machine Learning" class="sc-iDAWOb bOrkAL" style="background-image: url(&quot;https://storage.googleapis.com/kaggle-organizations/7/thumbnail.png&quot;);"></div><svg width="24" height="24" viewBox="0 0 24 24"><circle r="11" cx="12" cy="12" fill="none" stroke-width="2" style="stroke: transparent;"></circle><circle r="11" cx="12" cy="12" fill="none" stroke-width="2" style="stroke: rgb(32, 33, 36);"></circle></svg></a></div></div></div></div></div></div></div><div class="sc-keNhcI haRdru"></div></div></div></div></div></div><div aria-live="polite" aria-atomic="true" role="alert" class="sc-cpjgyG jEcLfg"></div></div>
+
+
+</body></html>
